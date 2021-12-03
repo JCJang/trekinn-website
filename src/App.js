@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import Landing from './components/pages/Landing.js';
+
 import './App.css';
 
 function App() {
   return (
-    <div>
-      hi
+<div>
+    <Landing/>
+
+    <div className="bg-warm-lightest text-purple-500">
+    hihihihihi
+    </div>
     </div>
   );
 }

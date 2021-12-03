@@ -2,8 +2,8 @@ module.exports = {
  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
    darkMode: false, // or 'media' or 'class'
   theme: {
-    transparent: 'transparent',
-      current: 'currentColor',
+    extend:{
+    colors:{
       warm: {
         lightest: '#F1D7B6',
         light: '#C9AD83',
@@ -28,7 +28,9 @@ module.exports = {
       },
       gradient: {
         multiply: 'linear-gradient(180deg, #DDE6ED 0%, #66838B 100%);',
-      }
+      },
+    },
+  },
   },
   variants: {
     extend: {},
