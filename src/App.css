@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+//Genseki
+@font-face {
+    font-family: "Genseki";
+    src: url("./fonts/Genseki/GenSekiGothicTW-L-01.woff") format('woff');
+    font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "Genseki";
+    src: url("./fonts/Genseki/GenSekiGothicTW-R-01.woff") format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Genseki";
+    src: url("./fonts/Genseki/GenSekiGothicTW-M-01.woff") format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Genseki";
+    src: url("./fonts/Genseki/GenSekiGothicTW-B-01.woff") format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Genseki";
+    src: url("./fonts/Genseki/GenSekiGothicTW-H-01.woff") format('woff');
+    font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+//Genwan
+
+
+@font-face {
+    font-family: "Genwan";
+    src: url("./fonts/Genwan/GenWanMinTW-EL-01.woff") format('woff');
+    font-weight: 200;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "Genwan";
+    src: url("./fonts/Genwan/GenWanMinTW-L-01.woff") format('woff');
+    font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: "Genwan";
+    src: url("./fonts/Genwan/GenWanMinTW-R-01.woff") format('woff');
+    font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+    font-family: "Genwan";
+    src: url("./fonts/Genwan/GenWanMinTW-M-01.woff") format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Genwan";
+    src: url("./fonts/Genwan/GenWanMinTW-SB-01.woff") format('woff');
+    font-weight: 600;
+}
+
+
+.genwan{
+  font-family: "Genwan";
+}
+
+
+.genseki{
+  font-family: "Genseki";
 }
