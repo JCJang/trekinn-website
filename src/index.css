@@ -30,7 +30,7 @@ code {
 }
 
 .h3-lg{
-  @apply text-2xl tracking-wide font-semibold leading-5;
+  @apply text-2xl tracking-wide font-semibold leading-7;
   font-family: "Genwan";
 }
 
@@ -120,6 +120,28 @@ code {
   mix-blend-mode: multiply;
   opacity: 0.7;
 }
+
+.max-w-33{
+  max-width: calc(33.3% - 1px);
+}
+
+
+.divider-x{
+  border-right:none;
+  border-top: 1.2px solid;
+  height:1.5px;
+  flex-grow: 1;
+  width:100%;
+}
+
+.divider-y{
+  display:flex;
+  border-top:none;
+  border-right: 1.2px solid;
+  width:1.5px;
+  height: auto;
+}
+
 }
 }
 
@@ -140,16 +162,36 @@ code {
   border-radius: 7px;
   width:100%;
   text-align: center;
-  padding:1rem 0;
+  padding: 0.5rem 0;
   height:fit-content;
   box-sizing: border-box;
 }
 
-.divider-x{
-  border-width: 1px;
-  
+.glass{
+  /* From https://css.glass */
+background: rgba(62, 79, 84, 0.4);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.5px);
+-webkit-backdrop-filter: blur(2.5px);
 }
 
-.divider-y{
 
+.border-warm-light{
+  @apply divider-x sm:divider-y;
+  border-color:#C9AD83;
+}
+
+.border-dark{
+  @apply divider-x sm:divider-y;
+  border-color:#3E4F54;
+}
+
+.border-accent-green{
+  @apply divider-x sm:divider-y;
+  border-color:#A7C9AF;
+}
+
+.border-warm-lightest{
+  @apply divider-x sm:divider-y;
+  border-color:#F1D7B6;
 }

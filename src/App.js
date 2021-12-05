@@ -1,3 +1,10 @@
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Landing from './components/pages/Landing.js';
 
 import './App.css';
@@ -17,11 +24,17 @@ import "./fonts/Genwan/GenWanMinTW-EL-01.woff"
 
 function App() {
   return (
-<div>
-    <Landing/>
+    <Router>
+    <Routes>
+      <Route path="/" exact element={<Landing/>}>
+      </Route>
+      <Route></Route>
+      <Route></Route>
+      <Route></Route>
+      <Route></Route>
+    </Routes>
+  </Router>
 
-
-    </div>
   );
 }
 
