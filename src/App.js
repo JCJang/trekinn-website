@@ -20,12 +20,7 @@ function App() {
 <div>
     <Landing/>
 
-    <div className="bg-warm-lightest text-purple-500 genseki">
-你好
-    </div>
-    <div className="bg-warm-lightest text-purple-500 genwan">
-你好
-    </div>
+
     </div>
   );
 }

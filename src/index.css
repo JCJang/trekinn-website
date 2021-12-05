@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 16px;
+  @apply font-light text-base leading-7;
+  font-family: "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,4 +14,142 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@layer utilities {
+  @variants responsive {
+.h1-lg{
+  @apply text-6xl tracking-wider font-semibold;
+  font-family: "Genwan";
+}
+
+.h2-lg{
+  @apply tracking-widest font-semibold;
+  font-family: "Genwan";
+  font-size:2.5rem;
+}
+
+.h3-lg{
+  @apply text-2xl tracking-wide font-semibold leading-5;
+  font-family: "Genwan";
+}
+
+.captions-lg{
+  @apply tracking-wide font-medium;
+  font-size: 0.9rem;
+  font-family: "Genwan";
+}
+
+.body-lg{
+  @apply font-light text-base leading-7;
+  font-size: 1.1rem;
+  font-family: "Genseki";
+
+}
+
+.body2-lg{
+  @apply font-light text-base leading-8;
+  font-size: 0.8rem;
+  font-family: "Genseki";
+}
+
+.card-lg{
+  @apply font-semibold leading-7;
+  font-size: 1.25rem;
+  font-family: "Genwan";
+}
+
+
+.h1{
+  @apply text-4xl tracking-wider font-semibold;
+  font-family: "Genwan";
+}
+
+.h2{
+  @apply text-3xl tracking-widest font-semibold;
+  font-family: "Genwan";
+}
+
+.h3{
+  @apply text-2xl tracking-wide font-semibold leading-5;
+  font-family: "Genwan";
+}
+
+.captions{
+  @apply tracking-wide font-medium;
+  font-size: 0.9rem;
+  font-family: "Genwan";
+}
+
+.body{
+  @apply font-light text-base leading-7;
+  font-family: "Genseki";
+
+}
+
+.body2{
+  @apply font-light text-base leading-8;
+  font-size: 0.8rem;
+  font-family: "Genseki";
+}
+
+.card{
+  @apply font-semibold leading-7;
+  font-size: 1.25rem;
+  font-family: "Genwan";
+}
+
+.vertical{
+  writing-mode: vertical-rl;
+}
+
+.horizontal{
+  writing-mode: horizontal-tb;
+}
+
+.w-fit-content{
+  width:fit-content;
+}
+
+.h-fit-content{
+  height:fit-content;
+}
+
+.darken-layer{
+  background-image: linear-gradient(180deg, #DDE6ED 0%, #66838B 100%);
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+}
+}
+
+.action-btn{
+  border: 1px solid #A4A4A4;
+  width:fit-content;
+  padding:1rem 2.5rem;
+  height:fit-content;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1000px;
+}
+
+.link-btn{
+  background: #384A2C;
+  border: 1px solid #A7C9AF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  width:100%;
+  text-align: center;
+  padding:1rem 0;
+  height:fit-content;
+  box-sizing: border-box;
+}
+
+.divider-x{
+  border-width: 1px;
+  
+}
+
+.divider-y{
+
 }
