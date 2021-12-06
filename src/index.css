@@ -54,7 +54,7 @@ code {
 
 .card-lg{
   @apply font-semibold leading-7;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Genwan";
 }
 
@@ -75,8 +75,8 @@ code {
 }
 
 .captions{
-  @apply tracking-wide font-medium;
-  font-size: 0.8rem;
+  @apply tracking-wide font-medium leading-6;
+  font-size: 0.9rem;
   font-family: "Genwan";
 }
 
@@ -94,7 +94,7 @@ code {
 
 .card{
   @apply font-semibold leading-7;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   font-family: "Genwan";
 }
 
@@ -124,6 +124,9 @@ code {
   max-width: calc(33.3% - 1px);
 }
 
+.max-w-49{
+  max-width: calc(50% - 1px);
+}
 
 .divider-x{
   border-right:none;
@@ -138,7 +141,6 @@ code {
   border-top:none;
   border-right: 1.2px solid;
   width:1.5px;
-  height: auto;
 }
 
 }
@@ -147,13 +149,30 @@ code {
 .action-btn{
   border: 1px solid #A4A4A4;
   width:fit-content;
-  padding:1rem 2.5rem;
   height:fit-content;
   box-sizing: border-box;
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 1000px;
+  animation: pulse 3s infinite;
 }
 
+.action-btn:hover{
+ animation-play-state: paused;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 .link-btn{
   background: #384A2C;
   border: 1px solid #A7C9AF;
@@ -168,16 +187,44 @@ code {
 
 .glass{
   /* From https://css.glass */
-background: rgba(62, 79, 84, 0.4);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+background: rgba(164,164,164, 0.6);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 backdrop-filter: blur(2.5px);
 -webkit-backdrop-filter: blur(2.5px);
 }
 
 
-.border-warm-light{
-  @apply divider-x sm:divider-y;
+.glassDark{
+  /* From https://css.glass */
+background:  rgba(62, 79, 84, 0.4);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(2.5px);
+-webkit-backdrop-filter: blur(2.5px);
+}
+
+.border-landing-light{
+  @apply divider-x sm:divider-y sm:h-64;
   border-color:#C9AD83;
+}
+
+.border-rooms-carousel{
+  @apply divider-x lg:divider-y lg:h-64;
+  border-color:#C9AD83;
+  margin:auto;
+
+}
+
+.border-rooms-warm{
+  @apply divider-x lg:divider-y lg:h-64;
+  border-color:#C9AD83;
+  margin:auto;
+
+}
+
+.border-rooms-cool{
+  @apply divider-x lg:divider-y lg:h-64;
+  border-color:#A7C9AF;
+  margin:auto;
 }
 
 .border-dark{

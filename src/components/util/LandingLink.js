@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 
-const IntraWebLink = ({verticalTitle=true, title="", body="", linkText="", linkRoute=""}) => {
-  return (<div className="bg-background-beige text-accent flex p-6">
+const LandingLink = ({verticalTitle=true, title="", body="", linkText="", linkRoute=""}) => {
+  return (<div className="bg-background-beige text-accent flex p-6 sm:max-w-33">
     {verticalTitle &&
       <div className="h2 lg:h2-lg vertical fit-content tracking-tighter opacity-75 opacity-75" style={{
         margin: "0 1.7rem 0 1rem"
@@ -21,4 +21,4 @@ const IntraWebLink = ({verticalTitle=true, title="", body="", linkText="", linkR
   </div>)
 }
 
-export default IntraWebLink
+export default LandingLink

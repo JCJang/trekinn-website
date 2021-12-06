@@ -6,20 +6,20 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import {useState} from 'react'
 
-const Navbar = () => {
+const NavbarDark = () => {
 
   const [navOpen, setNavOpen] = useState(false)
 
   return (<>
-      <div className="sm:hidden z-50 cursor-pointer absolute p-3 text-background" onClick={()=>{setNavOpen(!navOpen)}}>
+      <div className="sm:hidden z-50 cursor-pointer absolute p-3 text-background-cool" onClick={()=>{setNavOpen(!navOpen)}}>
       {navOpen?
-      <MenuOutlinedIcon className="w-12 h-12 text-background"/>
+      <MenuOutlinedIcon className="w-12 h-12 text-background-cool"/>
       :
-      <CloseOutlinedIcon className="w-12 h-12 text-background"/>
+      <CloseOutlinedIcon className="w-12 h-12 text-background-cool"/>
       }
       </div>
 
-      <nav className="glass z-20 shadow h-screen w-64 sm:h-12 pt-3 sm:pt-2 p-2 sm:w-screen absolute top-0 text-background flex flex-col sm:flex-row justify-between content-center px-4 duration-300" style={{
+      <nav className="glassDark z-20 shadow h-screen w-64 sm:h-12 pt-3 sm:pt-2 p-2 sm:w-screen absolute top-0 text-background-cool flex flex-col sm:flex-row justify-between content-center px-4 duration-300" style={{
     left:navOpen?"-16rem":"0px"
   }}>
 
@@ -34,34 +34,34 @@ const Navbar = () => {
 
     <div className="flex flex-col sm:flex-row relative gap-3 sm:gap-0">
 
-    <div className="m-auto">
+    <div className="m-auto sm:opacity-75 sm:hover:opacity-100">
     <NavLink linkText="簡介" linkRoute="/about"/>
     </div>
     <div className="border-dark opacity-50"></div>
 
-    <div className="hidden m-auto sm:block">
+    <div className="hidden m-auto sm:block sm:opacity-75 sm:hover:opacity-100">
       <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
     </div>
 
-    <div className="sm:hidden m-auto">
+    <div className="sm:hidden m-auto sm:opacity-75 sm:hover:opacity-100">
       <NavLink linkText="觀光指南" linkRoute="/destinations"/>
     </div>
 
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto">
+    <div className="m-auto sm:opacity-75 sm:hover:opacity-100">
     <NavLink linkText="訂房" linkRoute="/rooms"/>
     </div>
 
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto">
+    <div className="m-auto sm:opacity-75 sm:hover:opacity-100">
     <NavLink linkText="聯絡資訊" linkRoute="/contact"/>
     </div>
 
     <div className="border-dark opacity-50 sm:hidden"></div>
 
-    <div className="sm:hidden m-auto">
+    <div className="sm:hidden m-auto sm:opacity-75 sm:hover:opacity-100">
     <NavLink linkText="地圖" linkRoute="/map"/>
     </div>
   </div>
@@ -74,4 +74,4 @@ const Navbar = () => {
 </>)
 }
 
-export default Navbar
+export default NavbarDark
