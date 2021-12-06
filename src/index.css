@@ -40,16 +40,18 @@ code {
 }
 
 .body-lg{
-  @apply font-light text-base leading-7;
+  @apply font-light text-base leading-8;
   font-size: 1rem;
   font-family: "Genseki";
+  opacity: 0.85;
 
 }
 
 .body2-lg{
-  @apply font-light text-base leading-7;
+  @apply font-light text-base leading-8;
   font-size: 0.8rem;
   font-family: "Genseki";
+  opacity: 0.85;
 }
 
 .card-lg{
@@ -240,4 +242,8 @@ backdrop-filter: blur(2.5px);
 .border-warm-lightest{
   @apply divider-x sm:divider-y;
   border-color:#F1D7B6;
+}
+
+.saturate-70{
+  filter: saturate(0.7);
 }

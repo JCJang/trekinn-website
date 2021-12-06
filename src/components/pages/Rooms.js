@@ -22,7 +22,7 @@ import AirOutlinedIcon from '@mui/icons-material/AirOutlined';
 import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
 
 import EmojiFoodBeverageOutlinedIcon from '@mui/icons-material/EmojiFoodBeverageOutlined';
-
+  // <h1 className="mt-20 mx-16 h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 opacity-50">客房介紹</h1>
 //photos
 import twoBedroomOne from '../../photos/rooms/2-1.jpg'
 import twoBedroomTwo from '../../photos/rooms/2-2.jpg'
@@ -30,6 +30,9 @@ import twoBedroomThree from '../../photos/rooms/2-3.jpg'
 import twoBedroomFour from '../../photos/rooms/2-4.jpg'
 import fourBedroomOne from '../../photos/rooms/4-1.jpg'
 import fourBedroomTwo from '../../photos/rooms/4-2.jpg'
+import bathroom from '../../photos/rooms/bathroom.jpg'
+import lobby from '../../photos/rooms/lobby.jpg'
+import lobby2 from '../../photos/rooms/lobby-2.jpg'
 
 const Rooms = ({
   FourBedroomPeakPrice = "2200",
@@ -40,23 +43,24 @@ const Rooms = ({
   return (<div className="bg-background h-screen overflow-y-scroll">
     <Navbar/>
     <div>
-      <div className="flex flex-col lg:flex-row items-center">
-        <div className="flex bg-background flex-col flex-grow md:p-10 w-full lg:max-w-49 items-center text-left py-8">
-          <Carousel title="精緻雙人房" imgSources={[twoBedroomOne, twoBedroomTwo, twoBedroomThree, twoBedroomFour]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption="6~8坪空間，一大床(6尺)，淋浴設施，8坪可加床。"/>
+
+      <div className="flex flex-col lg:flex-row items-center mt-16">
+        <div className="flex bg-background h-full flex-col flex-grow md:px-6 w-full lg:max-w-49 items-center text-left">
+          <Carousel title="精緻雙人房" imgSources={[twoBedroomOne, twoBedroomTwo, twoBedroomThree, twoBedroomFour, bathroom, lobby, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption="6~8坪空間，一大床(6尺)，淋浴設施，8坪可加床。"/>
         </div>
         <div className="border-rooms-carousel"></div>
-        <div className="flex bg-background flex-col flex-grow md:p-10 w-full lg:max-w-49 items-center text-left py-8">
-          <Carousel title="溫馨四人房" imgSources={[fourBedroomOne, fourBedroomTwo]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption="9坪空間，兩大床(5尺)，有陽台，淋浴設施，可加床。
+        <div className="flex bg-background h-full flex-col flex-grow md:px-8 w-full lg:max-w-49 items-center text-left">
+          <Carousel title="溫馨四人房" imgSources={[fourBedroomOne, fourBedroomTwo, bathroom, lobby, lobby2]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption="9坪空間，兩大床(5尺)，有陽台，淋浴設施，可加床。
 
 "/>
         </div>
       </div>
-      <div className="captions text-grey-dark px-16"><HelpOutlineOutlinedIcon/>
+      <div className="captions text-grey-dark px-16 py-6"><HelpOutlineOutlinedIcon/>
         假日 指連續假日、週五、週六。部分房型的寒暑假期間。平日 指週日至週四。以上不含農曆新年假期，春節優惠價格於年前公告。</div>
 
       <div className="captions bg-background-cool text-grey-dark flex flex-col sm:flex-row">
 
-        <div className="p-6 my-2 flex sm:px-16 flex-col lg:flex-row w-full">
+        <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="times" className="w-full lg:w-4/12 sm:p-6 flex flex-col">
             <div className="flex flex-row w-full">
               <div className="w-1/2">
@@ -145,7 +149,7 @@ const Rooms = ({
         </div>
       </div>
 
-      <div id="payment" className="p-6 my-2 flex flex-col lg:flex-row">
+      <div id="payment" className="mb-6 flex flex-col lg:flex-row">
         <div id="overview" className="w-full lg:w-1/2 sm:p-6 sm:px-16">
           <h2 className="h2 lg:h2-lg text-accent my-5">
             訂房與付費
