@@ -22,7 +22,7 @@ const Contact = ({
             <div className="flex flex-col flex-grow w-full sm:w-5/12 items-center text-left sm:text-left py-8">
             <h3 className="h3 lg:h3-lg text-left w-full sm:w-64 opacity-50">{contacttitle}</h3>
             <div className="body py-4 lg:body-lg text-left w-full sm:w-64">{contactbody1}</div>
-            </div>
+            </div> 
 
             <div className="sm:p-10 sm:pt-18 grid grid-rows-3 sm:mr-16 w-full sm:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 1fr 1fr"}}>
             <LocalPhoneSharpIcon className="text-accent-blue w-3"/><div className="card">電話、簡訊</div>
