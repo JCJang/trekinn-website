@@ -4,13 +4,14 @@ import IntraWebLink from '../util/IntraWebLink.js'
 import Navbar from '../util/Navbar.js'
 import Footer from '../util/Footer.js'
 
-const About = () => {
+const Destinations = () => {
   return (
-    <div className="bg-background-beige w-screen h-screen overflow-y-scroll overflow-x-hidden">
+    <div className="bg-background-beige w-screen h-screen overflow-y-scroll">
     <Navbar/>
-      <div>About</div>
+      <div>Destinations</div>
     <Footer/>
-    </div>  )
+    </div>
+  )
 }
 
-export default About
+export default Destinations
