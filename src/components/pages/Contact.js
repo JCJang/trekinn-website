@@ -6,7 +6,7 @@ import Footer from '../util/Footer.js'
 
 const Contact = () => {
   return (
-    <div className="bg-background-beige w-screen h-screen overflow-y-scroll">
+    <div className="bg-background-beige p-6 sm:p-10 sm:pt-18 w-screen h-screen overflow-y-scroll">
     <Navbar/>
       <div>Contact</div>
     <Footer/>

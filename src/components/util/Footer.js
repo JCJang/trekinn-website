@@ -4,12 +4,12 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 
 const Footer = () => {
   return (
-    <div className="w-screen p-8 bg-warm flex flex-col items-center justify-center text-center sm:text-left">
+    <footer className="w-screen p-6 bg-warm flex flex-col items-center justify-center text-center sm:text-left">
       <div className="flex flex-col w-full sm:flex-row text-background justify-center">
         <div className="flex flex-col w-full sm:w-1/2">
             <div className="h3 sm:text-base">
               <div className="leading-9">
-              《美崙遊記》 970 花蓮市中興路179號
+              《美崙遊記》 970 花蓮市<br className="sm:hidden"></br>中興路179號
               </div>
             </div>
             <div className="captions text-xs mt-1 tracking-widest">
@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="captions mt-6 sm:mt-3 sm:hidden text-background">
         © 2006 - 2021 Trekinn, All rights reserved.
       </div>
-    </div>
+    </footer>
   )
 }
 

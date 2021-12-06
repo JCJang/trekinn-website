@@ -5,7 +5,7 @@
 
 body {
   font-size: 16px;
-  @apply font-light text-base leading-7;
+  @apply font-light text-base leading-8;
   font-family: "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,9 +24,8 @@ code {
 }
 
 .h2-lg{
-  @apply tracking-widest font-semibold;
+  @apply tracking-widest text-4xl font-semibold;
   font-family: "Genwan";
-  font-size:2.5rem;
 }
 
 .h3-lg{
@@ -42,13 +41,13 @@ code {
 
 .body-lg{
   @apply font-light text-base leading-7;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Genseki";
 
 }
 
 .body2-lg{
-  @apply font-light text-base leading-8;
+  @apply font-light text-base leading-7;
   font-size: 0.8rem;
   font-family: "Genseki";
 }
@@ -66,12 +65,12 @@ code {
 }
 
 .h2{
-  @apply text-3xl tracking-widest font-semibold;
+  @apply text-2xl tracking-widest font-semibold;
   font-family: "Genwan";
 }
 
 .h3{
-  @apply text-2xl tracking-wide font-semibold leading-5;
+  @apply text-xl tracking-wide font-semibold leading-5;
   font-family: "Genwan";
 }
 
