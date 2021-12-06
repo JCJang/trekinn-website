@@ -19,7 +19,7 @@ const Navbar = () => {
       }
       </div>
 
-      <nav className="glass z-20 shadow h-screen w-64 sm:h-12 p-2 pt-3 sm:w-screen absolute top-0 text-background-cool flex flex-col sm:flex-row justify-between content-center px-4 duration-300" style={{
+      <nav className="glass z-20 shadow h-screen w-64 sm:h-12 pt-3 sm:pt-2 p-2 sm:w-screen absolute top-0 text-background-cool flex flex-col sm:flex-row justify-between content-center px-4 duration-300" style={{
     left:navOpen?"-16rem":"0px"
   }}>
 
@@ -33,20 +33,37 @@ const Navbar = () => {
 
 
     <div className="flex flex-col sm:flex-row relative gap-3 sm:gap-0">
+
+    <div className="m-auto">
     <NavLink linkText="簡介" linkRoute="/about"/>
+    </div>
     <div className="border-dark opacity-50"></div>
-    <div className="hidden m-auto sm:inline-block">
+
+    <div className="hidden m-auto sm:block">
       <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
     </div>
+
     <div className="sm:hidden m-auto">
       <NavLink linkText="觀光指南" linkRoute="/destinations"/>
     </div>
+
     <div className="border-dark opacity-50"></div>
+
+    <div className="m-auto">
     <NavLink linkText="訂房" linkRoute="/rooms"/>
+    </div>
+
     <div className="border-dark opacity-50"></div>
+
+    <div className="m-auto">
     <NavLink linkText="聯絡資訊" linkRoute="/contact"/>
+    </div>
+
     <div className="border-dark opacity-50 sm:hidden"></div>
-    <div className="sm:hidden m-auto"><NavLink linkText="地圖" linkRoute="/map"/></div>
+
+    <div className="sm:hidden m-auto">
+    <NavLink linkText="地圖" linkRoute="/map"/>
+    </div>
   </div>
 
   <div className="font-semibold font-base genwan text-center rounded-full px-4 border-grey-dark" style={{borderWidth:"1.3px"}}>

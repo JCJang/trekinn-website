@@ -2,6 +2,7 @@ import landing from '../../photos/landing.jpg'
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import IntraWebLink from '../util/IntraWebLink.js'
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+import {Link} from 'react-router-dom'
 
 import Navbar from '../util/Navbar.js'
 
@@ -21,7 +22,7 @@ const Landing = () => {
       無論旅遊或出外，找優質花蓮住宿，《 美崙遊記 》是提供友善便利環境的平價花蓮民宿。感覺我們的用心，找一個符合期待的停頓空間。
             </div>
             <MountainLogo className="h-8 w-full m-6"/>
-            <div className="action-btn h3 lg:h3-lg text-warm bg-accent-green">立即訂房</div>
+            <Link to="/rooms" className="action-btn h3 lg:h3-lg text-warm bg-accent-green hover:scale-95 py-4 px-10 hover:animate-none hover:shadow hover:bg-accent-blue active:bg-grey-dark hover:text-accent duration-75">立即訂房</Link>
             <div className="caption lg:caption-lg semibold m-3 text-background">下滑閱讀更多<ExpandMoreOutlinedIcon/></div>
           </div>
 
