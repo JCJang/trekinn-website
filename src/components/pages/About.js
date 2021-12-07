@@ -20,9 +20,9 @@ aboutp4="《 美崙遊記 》是花蓮市區合法民宿，不是MOTEL也不是H
     <div className="bg-background-beige w-screen h-screen overflow-y-scroll overflow-x-hidden">
     <Navbar/>
       <div className="flex flex-row items-center">
-      <div className="flex bg-background flex-col flex-grow p-6 sm:p-10 sm:pt-18 w-2/3 items-center text-left py-8">
-      <PhotoHolder src={lobby} caption="民宿大廳" className=" mt-16 w-full sm:w-3/4"/>
-      <h1 className="h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 opacity-50">簡介</h1>
+      <div className="flex bg-background flex-col flex-grow p-6 sm:p-10 sm:pt-24 w-2/3 items-center text-left py-8">
+        <PhotoHolder src={lobby} caption="民宿大廳" className="sm:hidden w-full sm:w-3/4"/>
+      <h1 className="h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 hidden sm:block  opacity-50">簡介</h1>
       <h2 className="h2 lg:h2-lg text-warm w-full sm:w-3/4 py-4">
       <div>歡迎來到</div><div>花蓮民宿 《美崙遊記》</div></h2>
       <div className="body lg:body-lg text-warm w-full sm:w-3/4 my-2">{aboutp1}</div>
@@ -35,6 +35,7 @@ aboutp4="《 美崙遊記 》是花蓮市區合法民宿，不是MOTEL也不是H
 
       </div>
       <div className="hidden h-full sm:p-10 sm:pt-18 sm:flex flex-col w-1/3 bg-background-beige justify-center items-center">
+      <PhotoHolder src={lobby} caption="民宿大廳" className="hidden sm:block w-48 xl:w-64 my-2"/>
       <PhotoHolder src={exterior} caption="民宿外觀" className="w-48 xl:w-64 my-2"/>
       <PhotoHolder src={biking} caption="民宿附近的自行車道" className="w-48 xl:w-64 my-2"/>
       <PhotoHolder src={bay} caption="民宿鄰近海邊" className="w-48 xl:w-64 my-2"/>

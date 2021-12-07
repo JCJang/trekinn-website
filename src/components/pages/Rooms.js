@@ -48,8 +48,9 @@ const Rooms = ({
   return (<div className="bg-background h-screen overflow-y-scroll">
     <Navbar/>
     <div>
+    <h1 className="h3 hidden sm:block mt-10 sm:mt-24 sm:px-20 mx-6 sm:mx-0 m-1 my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">房型介紹</h1>
 
-      <div className="flex flex-col lg:flex-row items-center mt-10 sm:mt-16">
+      <div className="flex flex-col lg:flex-row mt-10 sm:mt-0 items-center">
         <div className="flex sm:hidden bg-background h-full flex-col flex-grow w-full lg:max-w-49 mb-8 lg:mb-0 items-center text-left">
           <Carousel title="精緻雙人房" imgSources={[twoBedroomOne, twoBedroomTwo, twoBedroomThree, twoBedroomFour, bathroom, lobby, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption="6~8坪空間，一大床(6尺)，淋浴設施，8坪可加床。"/>
         </div>
