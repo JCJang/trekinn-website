@@ -11,9 +11,7 @@ const IntraWebLink = ({verticalTitle=true, title="", body="", linkText="", linkR
       margin: "0 1rem 0 0"
     }}>
       {verticalTitle === false &&
-        <div className="h2 lg:h2-lg fit-content tracking-tighter opacity-75" style={{
-          margin: "2rem 0"
-        }}>{title}</div>
+        <div className="h2 lg:h2-lg fit-content tracking-tighter opacity-75 mb-5">{title}</div>
       }
       <div className="flex-grow">{body}</div>
       <Link to={linkRoute} className="h3 lg:h3-lg link-btn text-background text-center mt-4">{linkText}</Link>

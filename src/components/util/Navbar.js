@@ -11,11 +11,11 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false)
 
   return (<>
-      <div className="sm:hidden z-50 cursor-pointer absolute p-3 text-background" onClick={()=>{setNavOpen(!navOpen)}}>
+      <div className="sm:hidden z-50 cursor-pointer absolute p-4 text-background" onClick={()=>{setNavOpen(!navOpen)}}>
       {navOpen?
-      <MenuOutlinedIcon className="w-12 h-12 text-background"/>
+      <MenuOutlinedIcon className="w-12 h-12 text-accent-blue"/>
       :
-      <CloseOutlinedIcon className="w-12 h-12 text-background"/>
+      <CloseOutlinedIcon className="w-12 h-12 text-accent-red"/>
       }
       </div>
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     left:navOpen?"-16rem":"0px"
   }}>
 
-    <div className="hidden sm:inline-block font-semibold genwan text-center">
+    <div className="hidden sm:inline-block font-semibold mt-1 genwan text-center">
     <NavLink linkText="《 美崙遊記 》" linkRoute="/"/>
     </div>
 

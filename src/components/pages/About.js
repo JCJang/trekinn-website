@@ -6,7 +6,7 @@ import Footer from '../util/Footer.js'
 import PhotoHolder from '../util/PhotoHolder.js'
 
 //photos
-import lobby from '../../photos/about/lobby.jpg'
+import lobby from '../../photos/about/lobby-lg.jpg'
 import exterior from '../../photos/about/exterior.jpg'
 import biking from '../../photos/about/biking.jpg'
 import bay from '../../photos/about/bay.jpg'
