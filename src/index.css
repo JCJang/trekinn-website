@@ -247,6 +247,12 @@ backdrop-filter: blur(2.5px);
   margin:auto;
 }
 
+.border-destinations-warm{
+  @apply divider-x;
+  border-color:#C9AD83;
+  margin:auto;
+}
+
 .border-dark{
   @apply divider-x sm:divider-y;
   border-color:#3E4F54;
@@ -264,4 +270,8 @@ backdrop-filter: blur(2.5px);
 
 .saturate-70{
   filter: saturate(0.7);
+}
+
+.grid-link > div {
+  cursor: pointer;
 }

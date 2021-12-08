@@ -18,11 +18,11 @@ const DestinationsAndMap = () => {
   return (<div className="bg-background h-screen overflow-y-scroll">
     <Navbar/>
     <div>
-      <h1 className="h3 hidden sm:block mt-10 sm:mt-24 sm:px-20 mx-6 sm:mx-0 m-1 my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">觀光指南及地圖</h1>
-      <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 flex-col bg-background-cool">
+      <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 pt-10 sm:pt-12 sm:px-20 flex-col bg-background-cool">
 
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col  lg:flex-row">
           <div id="overview" className="w-full flex-col-reverse sm:flex-col lg:w-1/2 p-6 ">
+            <h1 className="h3 hidden sm:block my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">觀光指南及地圖</h1>
             <h2 className="h2 lg:h2-lg lg:mb-6 text-accent">
               觀光重要景點的路程及時間
             </h2>
@@ -43,7 +43,7 @@ const DestinationsAndMap = () => {
           </div>
           <div className="border-rooms-cool"></div>
           <div id="region" className="w-full flex flex-col lg:w-1/2 p-6 lg:pl-16">
-            <div id="local" className="mb-3">
+            <div id="local" className="mb-3 lg:mt-16 lg:pt-2">
               <div className="body sm:body text-grey-darkest">
                 以下是花蓮美崙遊記民宿到一些重要地點的路徑，請點選
                 <span className="text-grey-dark">地點名稱</span>
@@ -118,47 +118,46 @@ const DestinationsAndMap = () => {
         </div>
       </div>
 
+      <div id="agreement" className="captions flex flex-col lg:flex-row text-grey-dark sm:px-16 lg:flex-row">
+        <div className="w-full lg:w-3/5 p-6">
+          <h2 className="h2 lg:h2-lg text-accent my-5">
+            交通套裝行程服務
+          </h2>
+          <h3 className="h3 lg:h3-lg text-warm my-5">
+            太魯閣、花東縱谷、東海岸、、、等半日遊一日遊
+          </h3>
+          <div className="body sm:body text-grey-darkest">
+            花蓮旅遊可自行坐車或開車自由行, 也可以3或4人包車, 由有經驗的司機導遊到各個您喜歡的景點. 您也可以參加美崙遊記與旅行社合作的巴士遊. 美崙遊記可以代為辦理包車, 協助報名各種巴士遊, 歡迎洽詢0983-661588。
+          </div>
+          <h3 className="h3 lg:h3-lg text-warm my-5">
+            各種叫車包車套裝行程服務
+          </h3>
+          <div className="body sm:body text-grey-darkest">
+            美崙遊記民宿挑選優質計程車、中小客車、租車公司、旅行社各景點套裝行程，服務品質較有保障，價錢也可能較為便宜，可配合房客彈性調整。另外還有提供代辦賞鯨,泛舟、獨木舟、溯溪、溫泉...等行程及優惠門票。歡迎詢問，我們會提供建議，協助安排適合您的預算及行程。
+          </div>
+          <h3 className="h3 lg:h3-lg text-warm my-5">
+            包車旅遊可以協助你找到好司機
+          </h3>
+          <div className="body sm:body text-grey-darkest">
+            如果有3人以上出遊, 可以考慮包一輛車, 由美崙遊記合作車行優良司機, 帶您去想去的景點. 考量旅遊時效及方便, 合理價錢我們會給于建議, 適合初次來大花蓮地區旅遊者. 包車可以提早預定或入住時決定, 歡迎洽詢0983-661588。
+          </div>
+        </div>
 
-            <div id="agreement" className="captions flex flex-col lg:flex-row text-grey-dark sm:px-16 lg:flex-row">
-              <div className="w-full lg:w-3/5 p-6">
-                <h2 className="h2 lg:h2-lg text-accent my-5">
-                  交通套裝行程服務
-                </h2>
-                <h3 className="h3 lg:h3-lg text-warm my-5">
-                  太魯閣、花東縱谷、東海岸、、、等半日遊一日遊
-                </h3>
-                <div className="body sm:body text-grey-darkest">
-                  花蓮旅遊可自行坐車或開車自由行, 也可以3或4人包車, 由有經驗的司機導遊到各個您喜歡的景點. 您也可以參加美崙遊記與旅行社合作的巴士遊. 美崙遊記可以代為辦理包車, 協助報名各種巴士遊, 歡迎洽詢0983-661588。
-                </div>
-                <h3 className="h3 lg:h3-lg text-warm my-5">
-                  各種叫車包車套裝行程服務
-                </h3>
-                <div className="body sm:body text-grey-darkest">
-                  美崙遊記民宿挑選優質計程車、中小客車、租車公司、旅行社各景點套裝行程，服務品質較有保障，價錢也可能較為便宜，可配合房客彈性調整。另外還有提供代辦賞鯨,泛舟、獨木舟、溯溪、溫泉...等行程及優惠門票。歡迎詢問，我們會提供建議，協助安排適合您的預算及行程。
-                </div>
-                <h3 className="h3 lg:h3-lg text-warm my-5">
-                  包車旅遊可以協助你找到好司機
-                </h3>
-                <div className="body sm:body text-grey-darkest">
-                  如果有3人以上出遊, 可以考慮包一輛車, 由美崙遊記合作車行優良司機, 帶您去想去的景點. 考量旅遊時效及方便, 合理價錢我們會給于建議, 適合初次來大花蓮地區旅遊者. 包車可以提早預定或入住時決定, 歡迎洽詢0983-661588。
-                </div>
-              </div>
+        <div className="w-full lg:w-2/5 lg:pl-16 p-6">
 
-              <div className="w-full lg:w-2/5 lg:pl-16 p-6">
+          <div className="body sm:body text-grey-darkest mt-2">
+            <PhotoHolder src={lakeCanoing} caption="鯉魚潭獨木舟水上活動"/>
+          </div>
 
-                <div className="body sm:body text-grey-darkest mt-2">
-                  <PhotoHolder src={lakeCanoing} caption="鯉魚潭獨木舟水上活動"/>
-                </div>
+          <div className="body sm:body text-grey-darkest mt-2">
+            <PhotoHolder src={hualienCoast} caption="花蓮的東岸大自然景觀"/>
+          </div>
 
-                <div className="body sm:body text-grey-darkest mt-2">
-                  <PhotoHolder src={hualienCoast} caption="花蓮的東岸大自然景觀"/>
-                </div>
-
-                <div className="body sm:body text-grey-darkest mt-2">
-                  <PhotoHolder src={tarokoTrial} caption="太魯閣國家公園錐麓古道"/>
-                </div>
-              </div>
-            </div>
+          <div className="body sm:body text-grey-darkest mt-2">
+            <PhotoHolder src={tarokoTrial} caption="太魯閣國家公園錐麓古道"/>
+          </div>
+        </div>
+      </div>
       <div className="captions bg-background-cool text-grey-dark flex flex-col sm:flex-row">
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="region" className="w-full flex flex-col p-6">
@@ -172,7 +171,7 @@ const DestinationsAndMap = () => {
                 花蓮景點及活動
               </h3>
 
-              <div className="grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3  text-grey-darkest">
+              <div className="grid-link grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3  text-grey-darkest">
 
                 <div>
                   <a href="http://www.taroko.gov.tw/" target="_blank">太魯閣國家公園</a>
@@ -230,7 +229,7 @@ const DestinationsAndMap = () => {
                 花蓮美食
               </h3>
 
-              <div className="grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3 text-grey-darkest">
+              <div className="grid-link grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3 text-grey-darkest">
                 <div>
                   <a href="http://www.dongdamen.com.tw/" target="_blank">東大門夜市</a>
                 </div>
@@ -285,6 +284,71 @@ const DestinationsAndMap = () => {
         </div>
       </div>
 
+      <div className="captions bg-background-beige text-warm flex flex-col sm:flex-row">
+        <div className="flex sm:px-16 flex-col lg:flex-row w-full">
+          <div id="region" className="w-full flex flex-col p-6">
+            <h2 className="h2 lg:h2-lg text-accent my-5">
+              其他連結
+            </h2>
+
+            <div className="flex flex-row">
+
+              <h3 className="h3 lg:h3-lg text-warm my-5 mr-3 w-1/4">
+                相關網站
+              </h3>
+
+              <div className="grid-link grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3  text-grey-darkest">
+
+                <div>
+                  <a href="http://tour-hualien.hl.gov.tw/Portal/?lang=0" target="_blank">花蓮觀光資訊網</a>
+                </div>
+                <div>
+                  <a href="http://www.railway.gov.tw/tw/" target="_blank">台灣鐵路局</a>
+                </div>
+                <div>
+                  <a href="http://www.hulairport.gov.tw/" target="_blank">花蓮航空站</a>
+                </div>
+                <div>
+                  <a href="https://www.motc.gov.tw/ch/home.jsp?id=4&amp;parentpath=0" target="_blank">即時路況</a>
+                </div>
+                <div>
+                  <a href="http://www.hualienbus.com.tw/bus/hualien_bus.php" target="_blank">花蓮客運</a>
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/TarokoBus/" target="_blank">太魯閣客運(電動車)</a>
+                </div>
+
+              </div>
+            </div>
+            <div className="border-destinations-warm"></div>
+
+            <div className="flex flex-row">
+
+              <h3 className="h3 lg:h3-lg text-warm my-5 mr-3 w-1/4">
+                合作商
+              </h3>
+
+              <div className="grid-link grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3 text-grey-darkest">
+              <div>
+                <a href="http://booking.com" target="_blank">Booking.com</a>
+              </div>
+              <div>
+                <a href="http://www.e-go.com.tw/" target="_blank">e-go台灣租車</a>
+              </div>
+              <div>
+                <a href="http://www.huadong.com.tw/" target="_blank">鯨世界</a>
+              </div>
+              <div>
+                <a href="http://www.eastsea.com.tw/" target="_blank">東海泛舟</a>
+              </div>
+              <div>
+                <a href="http://www.riverking.com.tw/" target="_blank">溯溪王</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </div>
