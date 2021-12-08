@@ -39,12 +39,8 @@ const Navbar = () => {
     </div>
     <div className="border-dark opacity-50"></div>
 
-    <div className="hidden m-auto sm:block">
+    <div className="m-auto">
       <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
-    </div>
-
-    <div className="sm:hidden m-auto">
-      <NavLink linkText="觀光指南" linkRoute="/destinations"/>
     </div>
 
     <div className="border-dark opacity-50"></div>
@@ -59,11 +55,7 @@ const Navbar = () => {
     <NavLink linkText="聯絡資訊" linkRoute="/contact"/>
     </div>
 
-    <div className="border-dark opacity-50 sm:hidden"></div>
 
-    <div className="sm:hidden m-auto">
-    <NavLink linkText="地圖" linkRoute="/map"/>
-    </div>
   </div>
 
   <div className="font-semibold font-base genwan text-center rounded-full px-4 border-grey-dark" style={{borderWidth:"1.3px"}}>

@@ -18,7 +18,7 @@ const DestinationsAndMap = () => {
   return (<div className="bg-background h-screen overflow-y-scroll">
     <Navbar/>
     <div>
-      <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 pt-10 sm:pt-12 sm:px-20 flex-col bg-background-cool">
+      <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 pt-2 sm:pt-12 sm:px-20 flex-col bg-background-cool">
 
         <div className="flex flex-col  lg:flex-row">
           <div id="overview" className="w-full flex-col-reverse sm:flex-col lg:w-1/2 p-6 ">
@@ -120,7 +120,7 @@ const DestinationsAndMap = () => {
 
       <div id="agreement" className="captions flex flex-col lg:flex-row text-grey-dark sm:px-16 lg:flex-row">
         <div className="w-full lg:w-3/5 p-6">
-          <h2 className="h2 lg:h2-lg text-accent my-5">
+          <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
             交通套裝行程服務
           </h2>
           <h3 className="h3 lg:h3-lg text-warm my-5">
@@ -129,7 +129,7 @@ const DestinationsAndMap = () => {
           <div className="body sm:body text-grey-darkest">
             花蓮旅遊可自行坐車或開車自由行, 也可以3或4人包車, 由有經驗的司機導遊到各個您喜歡的景點. 您也可以參加美崙遊記與旅行社合作的巴士遊. 美崙遊記可以代為辦理包車, 協助報名各種巴士遊, 歡迎洽詢0983-661588。
           </div>
-          <h3 className="h3 lg:h3-lg text-warm my-5">
+          <h3 className="h3 lg:h3-lg text-warm  mt-2 mb-5 sm:my-5">
             各種叫車包車套裝行程服務
           </h3>
           <div className="body sm:body text-grey-darkest">
@@ -161,7 +161,7 @@ const DestinationsAndMap = () => {
       <div className="captions bg-background-cool text-grey-dark flex flex-col sm:flex-row">
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="region" className="w-full flex flex-col p-6">
-            <h2 className="h2 lg:h2-lg text-accent my-5">
+            <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
               觀光地點連結一覽
             </h2>
 
@@ -287,7 +287,7 @@ const DestinationsAndMap = () => {
       <div className="captions bg-background-beige text-warm flex flex-col sm:flex-row">
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="region" className="w-full flex flex-col p-6">
-            <h2 className="h2 lg:h2-lg text-accent my-5">
+            <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
               其他連結
             </h2>
 

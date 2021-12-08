@@ -77,7 +77,7 @@ const Rooms = ({
           <div id="times" className="w-full lg:w-4/12 p-6 flex flex-col">
             <div className="flex flex-row w-full">
               <div className="w-1/2">
-                <h3 className="h3 lg:h3-lg text-warm my-5 mr-6">
+                <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5 mr-6">
                   入住
                 </h3>
                 <div className="genseki text-lg font-normal opacity-75 text-grey-dark">
@@ -85,7 +85,7 @@ const Rooms = ({
                 </div>
               </div>
               <div className="w-1/2">
-                <h3 className="h3 lg:h3-lg text-warm my-5">
+                <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5">
                   退房
                 </h3>
                 <div className="genseki text-lg font-normal opacity-75 text-grey-dark">
@@ -102,7 +102,7 @@ const Rooms = ({
           <div className="border-rooms-cool"></div>
           <div id="region" className="w-full flex flex-col lg:w-8/12 p-6">
             <div className="flex flex-row">
-              <h3 className="h3 lg:h3-lg text-warm my-5 mr-3 w-1/4">
+              <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5 mr-3 w-1/4">
                 設施
               </h3>
 
@@ -164,7 +164,7 @@ const Rooms = ({
 
       <div id="payment" className="mb-6 flex sm:px-16 flex-col lg:flex-row">
         <div id="overview" className="w-full lg:w-1/2 p-6 ">
-          <h2 className="h2 lg:h2-lg text-accent my-5">
+          <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
             訂房與付費
           </h2>
           <div className="body sm:body text-grey-darkest">
@@ -219,7 +219,7 @@ const Rooms = ({
 
       <div id="agreement" className="caption bg-background-cool text-grey-dark sm:px-16 flex flex-col lg:flex-row">
         <div id="cancellation" className="w-full lg:w-1/2 p-6">
-          <h2 className="h2 lg:h2-lg text-accent my-5">
+          <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
             訂房須知
           </h2>
           <h3 className="h3 lg:h3-lg text-warm my-5 pt-2">
@@ -230,7 +230,7 @@ const Rooms = ({
           </div>
         </div>
         <div className="border-rooms-cool"></div>
-        <div id="changes" className="w-full lg:w-1/2 p-6 lg:pl-16">
+        <div id="changes" className="w-full lg:w-1/2 p-6 sm:pb-10 lg:pl-16">
         <div id="local" className="mb-3">
           <h3 className="h3 lg:h3-lg text-warm my-5">
             更改訂房
@@ -255,8 +255,8 @@ const Rooms = ({
       <div id="overview" className="w-full sm:pl-16 lg:w-1/2 p-6 bg-background-beige">
           <IntraWebLink title="規劃行程服務" verticalTitle={false} body="只要資訊充足，花蓮蠻適合自由行。我們會提供協助及諮詢：代辦泛舟、賞鯨、溯溪等活動，花蓮海洋公園、兆豐農場優惠門票及各種套裝行程，代租交通工具。" linkText="查看交通及觀光指南" linkRoute="/destinations"/>
       </div>
-        <div id="overview" className="w-full sm:px-20 lg:px-16 lg:w-1/2 mx-2 lg:m-0 p-6">
-          <h2 className="h2 lg:h2-lg text-accent my-5">
+        <div id="overview" className="w-full sm:px-20 lg:px-16 lg:w-1/2 sm:mx-2 sm:pb-10 lg:m-0 p-6">
+          <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
             包棟或月租
           </h2>
           <div>

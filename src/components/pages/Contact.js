@@ -18,13 +18,13 @@ const Contact = ({
   return (
     <div className="bg-grey-darkest w-screen h-screen overflow-y-scroll">
     <NavbarDark/>
-          <div className="flex flex-col h-full sm:flex-row items-center content-center text-background-cool p-6 sm:p-10 sm:pt-18">
-            <div className="flex flex-col flex-grow w-full sm:w-5/12 items-center text-left sm:text-left py-8">
-            <h3 className="h3 lg:h3-lg text-left w-full sm:w-64 opacity-50">{contacttitle}</h3>
-            <div className="body py-4 lg:body-lg text-left w-full sm:w-64">{contactbody1}</div>
-            </div> 
+          <div className="flex flex-col h-full md:flex-row items-center content-center text-background-cool p-6 md:p-10 md:pt-18">
+            <div className="flex flex-col md:flex-grow w-full md:w-5/12 items-center text-left md:text-left py-8">
+            <h3 className="h3 lg:h3-lg text-left w-full md:w-64 opacity-50">{contacttitle}</h3>
+            <div className="body py-4 lg:body-lg text-left w-full md:w-64">{contactbody1}</div>
+            </div>
 
-            <div className="sm:p-10 sm:pt-18 grid grid-rows-3 sm:mr-16 w-full sm:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 1fr 1fr"}}>
+            <div className="md:p-10 md:pt-18 grid grid-rows-3 md:mr-16 w-full md:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 1fr 1fr"}}>
             <LocalPhoneSharpIcon className="text-accent-blue w-3"/><div className="card">電話、簡訊</div>
             <div className="card">0983-661-588<br></br>03-8228430</div>
             <AlternateEmailSharpIcon className="text-accent-blue w-3"/><div className="card">Email</div><div className="card">trekinnez@gmail.com</div>
