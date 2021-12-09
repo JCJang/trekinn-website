@@ -35,7 +35,7 @@ const DestinationsAndMap = () => {
        </Helmet>
     <Navbar/>
     <div>
-      <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 pt-2 sm:pt-12 sm:px-20 flex-col bg-background-cool">
+      <div id="payment" className="sm:mb-6 flex sm:px-16 sm:py-6 pt-2 sm:pt-12 sm:px-20 flex-col bg-background-cool">
 
         <div className="flex flex-col  lg:flex-row">
           <div id="overview" className="w-full flex-col-reverse sm:flex-col lg:w-1/2 p-6 ">
