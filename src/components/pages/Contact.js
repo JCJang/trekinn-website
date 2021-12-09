@@ -38,16 +38,19 @@ const Contact = ({
             <div className="body py-4 lg:body-lg text-left w-full md:w-64">{contactbody1}</div>
             </div>
 
-            <div className="md:p-10 md:pt-18 grid grid-rows-3 md:mr-16 w-full md:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 1fr 1fr"}}>
+            <div className="md:p-10 md:pt-18 grid grid-rows-3 md:mr-16 w-full md:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 30% calc(70% - 2.5rem)"}}>
             <LocalPhoneSharpIcon className="text-accent-blue w-3"/><div className="card">電話、簡訊</div>
-            <div className="card">0983-661-588<br></br>03-8228430</div>
-            <AlternateEmailSharpIcon className="text-accent-blue w-3"/><div className="card">Email</div><div className="card">trekinnez@gmail.com</div>
+            <div>
+            <a href="tel:+886983661588" data-interaction="Interaction - Phone Contact" className="card underline">0983-661-588</a><br></br>
+            <a href="tel:+88638228430" className="card underline">03-8228430</a>
+            </div>
+            <AlternateEmailSharpIcon className="text-accent-blue w-3"/><div className="card">Email</div><a href="mailto:trekinnez@gmail.com" className="card underline" data-interaction="Interaction - Email Contact">trekinnez@gmail.com</a>
             <span className="text-sm font-medium text-accent-blue w-3 tracking-tighter">LINE</span>
             <div className="card">LINE ID</div>
-            <div className="card">trekinnez</div>
+            <a className="card underline" href="https://line.me/R/ti/p/trekinnez" target="_blank">trekinnez</a>
             <FacebookOutlinedIcon className="text-accent-blue w-3"/>
-            <div className="card">Facebook ID</div>
-            <div className="card">trekinnez</div>
+            <div className="card">Facebook</div>
+            <a className="card underline" href="https://www.facebook.com/trekinn" target="_blank">facebook.com/trekinn</a>
             </div>
           </div>
           <Footer/>
