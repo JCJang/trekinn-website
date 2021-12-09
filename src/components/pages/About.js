@@ -1,4 +1,6 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
+
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import IntraWebLink from '../util/IntraWebLink.js'
 import Navbar from '../util/Navbar.js'
@@ -18,6 +20,21 @@ aboutp4="《 美崙遊記 》是花蓮市區合法民宿，不是MOTEL也不是H
 }) => {
   return (
     <div className="bg-background-beige w-screen h-screen overflow-y-scroll overflow-x-hidden">
+    <Helmet>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<meta http-equiv="Content-Language" content="zh-tw"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta name="format-detection" content="telephone=yes"></meta>
+<title>美崙遊記:花蓮民宿、市區住宿、旅遊行程門票協助</title>
+<meta name="Description" content="花蓮民宿住宿平價花蓮市區-美崙遊記民宿,舒適便利空調客房,旅遊租車門票優惠,是近七星潭花蓮港區鬧區夜市各美食景點的優質民宿,民宿網推薦排名"></meta>
+<meta name="keywords" content="花蓮民宿,花蓮市區住宿,花蓮旅遊,七星潭,花蓮海洋公園,泛舟,賞鯨,溯溪"></meta>
+<meta name="robots" content="index,follow"></meta>
+<meta name="rating" content="general"></meta>
+<meta name="publisher" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="author" content="花蓮 美崙遊記 民宿-Administrator"></meta>
+<meta name="copyright" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="distribution" content="global"></meta>
+    </Helmet>
     <Navbar/>
       <div className="flex flex-row items-center">
       <div className="flex bg-background flex-col flex-grow p-6 sm:p-10 sm:pt-24 w-2/3 items-center text-left py-8">

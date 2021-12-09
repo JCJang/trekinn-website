@@ -3,7 +3,7 @@ import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import IntraWebLink from '../util/IntraWebLink.js'
 import NavbarDark from '../util/NavbarDark.js'
 import Footer from '../util/Footer.js'
-
+import {Helmet} from 'react-helmet'
 //icons
 import LocalPhoneSharpIcon from '@mui/icons-material/LocalPhoneSharp';
 import AlternateEmailSharpIcon from '@mui/icons-material/AlternateEmailSharp';
@@ -17,6 +17,20 @@ const Contact = ({
 }) => {
   return (
     <div className="bg-grey-darkest w-screen h-screen overflow-y-scroll">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+<meta http-equiv="Content-Language" content="zh-tw"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta name="format-detection" content="telephone=yes"></meta>
+<title>美崙遊記:聯絡資訊</title>
+<meta name="Description" content="歡迎使用電話、簡訊、Line或EMail與我們聯繫"></meta>
+<meta name="keywords" content="聯絡,詢問"></meta>
+<meta name="robots" content="index,follow"></meta>
+<meta name="rating" content="general"></meta>
+<meta name="publisher" content="花蓮民宿,花蓮美崙遊記民宿"></meta>
+<meta name="author" content="花蓮美崙遊記民宿-Administrator"></meta>
+<meta name="copyright" content="花蓮民宿,花蓮美崙遊記民宿"></meta>
+<meta name="distribution" content="global"></meta>
     <NavbarDark/>
           <div className="flex flex-col h-full md:flex-row items-center content-center text-background-cool p-6 md:p-10 md:pt-18">
             <div className="flex flex-col md:flex-grow w-full md:w-5/12 items-center text-left md:text-left py-8">

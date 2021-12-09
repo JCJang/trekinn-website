@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from 'react-helmet'
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import Carousel from '../util/Carousel.js'
 import Navbar from '../util/Navbar.js'
@@ -45,7 +46,23 @@ const Rooms = ({
   TwoBedroomPeakPrice = "1500",
   TwoBedroomOffpeakPrice = "1200"
 }) => {
+
   return (<div className="bg-background h-screen overflow-y-scroll">
+  <Helmet>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+<meta http-equiv="Content-Language" content="zh-tw"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta name="format-detection" content="telephone=yes"></meta>
+<title>美崙遊記:客房介紹、特色、價格</title>
+<meta name="Description" content="各式客房介紹,防螨寢具大床,免費飲食品供應,訂房付費入住退房說明"></meta>
+<meta name="keywords" content="客房介紹,四人房,雙人房,客房特色,價格,訂房與付費,入住,退房"></meta>
+<meta name="robots" content="index,follow"></meta>
+<meta name="rating" content="general"></meta>
+<meta name="publisher" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="author" content="花蓮 美崙遊記 民宿-Administrator"></meta>
+<meta name="copyright" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="distribution" content="global"></meta>
+</Helmet>
     <Navbar/>
     <div>
     <h1 className="h3 hidden sm:block mt-10 sm:mt-24 sm:px-20 mx-6 sm:mx-0 m-1 my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">房型介紹</h1>
@@ -213,6 +230,11 @@ const Rooms = ({
             <div className="body sm:body text-grey-darkest">
               可採用信用卡或PayPal網路支付訂金。請點選下面按鈕，輸入訂金金額(以台幣NT或TWD計費)，再填入信用卡相關資料或登入您的PayPal帳號完成付款。
             </div>
+            <form className="mt-2 sm:mt-4" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+              <input type="hidden" name="cmd" value="_s-xclick"></input>
+              <input type="hidden" name="hosted_button_id" value="6RK45AVJZFQ6J"></input>
+              <input type="image" src="https://www.paypalobjects.com/zh_TW/TW/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal － 更安全、更簡單的線上付款方式！"></input>
+              </form>
           </div>
         </div>
       </div>

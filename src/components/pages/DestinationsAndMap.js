@@ -1,4 +1,6 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
+
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import Carousel from '../util/Carousel.js'
 import Navbar from '../util/Navbar.js'
@@ -16,6 +18,21 @@ import hualienCoast from '../../photos/destinations/hualien-coast.jpg'
 
 const DestinationsAndMap = () => {
   return (<div className="bg-background h-screen overflow-y-scroll">
+    <Helmet>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+<meta http-equiv="Content-Language" content="zh-tw"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta name="format-detection" content="telephone=yes"></meta>
+<title>美崙遊記:重要資訊、花蓮景點及活動、花蓮美食、合作商</title>
+<meta name="Description" content="民宿重要資訊公告,花蓮 景點 行程 活動 美食,花蓮民宿 住宿 合作商家"></meta>
+<meta name="keywords" content="花蓮民宿資訊,花蓮景點,花蓮旅遊,花蓮行程,花蓮活動,花蓮美食,花蓮好吃"></meta>
+<meta name="robots" content="index,follow"></meta>
+<meta name="rating" content="general"></meta>
+<meta name="publisher" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="author" content="花蓮 美崙遊記 民宿-Administrator"></meta>
+<meta name="copyright" content="花蓮 美崙遊記 民宿"></meta>
+<meta name="distribution" content="global"></meta>
+       </Helmet>
     <Navbar/>
     <div>
       <div id="payment" className="mb-6 flex sm:px-16 sm:py-6 pt-2 sm:pt-12 sm:px-20 flex-col bg-background-cool">

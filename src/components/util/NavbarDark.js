@@ -39,15 +39,16 @@ const NavbarDark = () => {
     </div>
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto sm:opacity-75 sm:hover:opacity-100">
-      <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
+    <div className="m-auto">
+    <NavLink linkText="訂房" linkRoute="/rooms"/>
     </div>
 
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto sm:opacity-75 sm:hover:opacity-100">
-    <NavLink linkText="訂房" linkRoute="/rooms"/>
+    <div className="m-auto">
+      <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
     </div>
+
 
     <div className="border-dark opacity-50"></div>
 
