@@ -144,7 +144,9 @@ code {
   border-right: 1.2px solid;
   width:1.5px;
 }
-
+.w-nav-lg{
+   width:calc(100vw + 16rem);
+}
 }
 }
 

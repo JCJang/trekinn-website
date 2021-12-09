@@ -4,56 +4,63 @@ import NavLink from './NavLink.js'
 import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
   const [navOpen, setNavOpen] = useState(false)
+  const location = useLocation();
 
   return (<>
-      <div className="sm:hidden z-50 cursor-pointer absolute p-4 text-background" onClick={()=>{setNavOpen(!navOpen)}}>
+      <div className="lg:hidden z-50 cursor-pointer absolute p-4 text-background" onClick={()=>{setNavOpen(!navOpen)}}>
       {navOpen?
-      <MenuOutlinedIcon className="w-12 h-12 text-accent-blue"/>
+      <CloseOutlinedIcon className="w-16 h-16 text-accent-red"/>
       :
-      <CloseOutlinedIcon className="w-12 h-12 text-accent-red"/>
+      <MenuOutlinedIcon className="w-16 h-16 text-accent-blue"/>
       }
       </div>
 
-      <nav className="glass z-20 shadow h-screen w-64 sm:h-12 pt-3 sm:pt-2 p-2 sm:w-screen absolute top-0 text-background flex flex-col sm:flex-row justify-between content-center px-4 duration-300" style={{
-    left:navOpen?"-16rem":"0px"
+      <nav className="glass z-20 shadow h-screen w-64 lg:h-12 pt-3 lg:pt-2 p-2 lg:w-nav-lg  absolute top-0 text-background flex flex-col lg:flex-row justify-between content-center px-4 duration-300" style={{
+    left:navOpen?"0px":"-16rem"
   }}>
 
-    <div className="hidden sm:inline-block font-semibold mt-1 genwan text-center">
+  <div className="hidden lg:block pl-64 font-semibold genwan text-center">
     <NavLink linkText="《 美崙遊記 》" linkRoute="/"/>
     </div>
 
-    <div className="sm:hidden font-semibold text-base genwan mt-1 text-center">
+    <div className="lg:hidden font-semibold text-base genwan mt-3 text-center">
     <Link to="/">《 美崙遊記 》</Link>
     </div>
 
 
-    <div className="flex flex-col sm:flex-row relative gap-3 sm:gap-0">
-
-    <div className="m-auto">
-    <NavLink linkText="簡介" linkRoute="/about"/>
+    <div className="flex flex-col w-full gap-3 lg:gap-0 lg:w-auto lg:flex-row relative">
+    <div className="flex lg:block">
+    <NavLink linkText="簡介" linkRoute="/about" currentPath={location.pathname}/>
     </div>
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto">
-    <NavLink linkText="訂房" linkRoute="/rooms"/>
+    <div className="flex lg:block">
+    <NavLink linkText="訂房" linkRoute="/rooms" currentPath={location.pathname}/>
     </div>
 
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto">
-      <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map"/>
+    <div className="flex lg:block">
+      <NavLink linkText="觀光指南及地圖" linkRoute="/destinations+map" currentPath={location.pathname}/>
     </div>
 
 
     <div className="border-dark opacity-50"></div>
 
-    <div className="m-auto">
-    <NavLink linkText="聯絡資訊" linkRoute="/contact"/>
+    <div className="flex lg:block">
+    <NavLink linkText="聯絡資訊" linkRoute="/contact" currentPath={location.pathname}/>
+    </div>
+
+    <div className="lg:hidden border-dark opacity-50"></div>
+
+    <div className="flex lg:hidden">
+    <NavLink linkText="回首頁" linkRoute="/"/>
     </div>
 
 
