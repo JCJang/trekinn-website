@@ -43,10 +43,10 @@ import lobbyLg from '../../photos/rooms/lobby-lg.jpg'
 import lobby2 from '../../photos/rooms/lobby-2.jpg'
 
 const Rooms = ({
-  FourBedroomPeakPrice = "2200",
-  FourBedroomOffpeakPrice = "1800",
-  TwoBedroomPeakPrice = "1500",
-  TwoBedroomOffpeakPrice = "1200"
+  FourBedroomPeakPrice = "",
+  FourBedroomOffpeakPrice = "",
+  TwoBedroomPeakPrice = "",
+  TwoBedroomOffpeakPrice = ""
 }) => {
   const {t, i18n} = useTranslation();
   return (<div className="bg-background h-screen overflow-y-scroll">

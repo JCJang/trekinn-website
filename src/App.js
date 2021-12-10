@@ -11,6 +11,8 @@ import Rooms from './components/pages/Rooms.js';
 import DestinationsAndMap from './components/pages/DestinationsAndMap.js';
 import Contact from './components/pages/Contact.js';
 
+import {FourBedroomPeakPrice, FourBedroomOffpeakPrice, TwoBedroomPeakPrice, TwoBedroomOffpeakPrice} from './EDITME/Prices.js';
+
 import './App.css';
 
 //import fonts
@@ -32,7 +34,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Landing/>}></Route>
       <Route path="/about" exact element={<About/>}></Route>
-      <Route path="/rooms" exact element={<Rooms/>}></Route>
+      <Route path="/rooms" exact element={<Rooms FourBedroomPeakPrice={FourBedroomPeakPrice} FourBedroomOffpeakPrice={FourBedroomOffpeakPrice} TwoBedroomPeakPrice={TwoBedroomPeakPrice} TwoBedroomOffpeakPrice={TwoBedroomOffpeakPrice}/>}></Route>
       <Route path="/destinations+map" exact element={<DestinationsAndMap/>}></Route>
       <Route path="/contact" exact element={<Contact/>}></Route>
 
