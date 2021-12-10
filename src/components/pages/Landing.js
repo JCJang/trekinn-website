@@ -11,7 +11,7 @@ import NavbarDark from '../util/NavbarDark.js'
 
 const Landing = () => {
   const {t, i18n} = useTranslation();
-  
+
   return (
     <div className="bg-background-beige h-screen overflow-y-scroll">
   <Helmet>
@@ -35,24 +35,24 @@ const Landing = () => {
           <img className="h-screen w-screen object-cover" src={landing}/>
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
             <h1 className="text-background vertical h1 lg:h1-lg lg:horizontal m-8">
-              美崙遊記
+              {t("Landing.h1")}
             </h1>
             <div className="body text-background max-w-sm text-center tracking-wider mx-12">
-      無論旅遊或出外，找優質花蓮住宿，《 美崙遊記 》是提供友善便利環境的平價花蓮民宿。感覺我們的用心，找一個符合期待的停頓空間。
+    {t("Landing.p1")}
             </div>
             <MountainLogo className="h-8 w-full m-6"/>
-            <Link to="/rooms" className="action-btn h3 lg:h3-lg text-warm bg-accent-green hover:scale-95 py-4 px-10 hover:shadow hover:bg-accent-blue active:bg-grey-dark hover:text-accent duration-75">立即訂房</Link>
-            <div className="caption lg:caption-lg semibold m-3 text-background">下滑閱讀更多<ExpandMoreOutlinedIcon/></div>
+            <Link to="/rooms" className="action-btn h3 lg:h3-lg text-warm bg-accent-green hover:scale-95 py-4 px-10 hover:shadow hover:bg-accent-blue active:bg-grey-dark hover:text-accent duration-75">{t("Landing.actionButton")}</Link>
+            <div className="caption lg:caption-lg semibold m-3 text-background">{t("Landing.readMore")}<ExpandMoreOutlinedIcon/></div>
           </div>
 
     </div>
 
   <div className="flex flex-col sm:flex-row py-4">
-  <LandingLink title="民宿簡介" body="《 美崙遊記 》是花蓮市區優良合法民宿，從2006年營業至今，也榮獲花蓮縣政府頒衛生優良獎，住宿品質有保障。民宿平實優雅、設施齊全，是預算內花蓮旅遊出外住宿的好選擇。" linkText="民宿簡介" linkRoute="/about"/>
+  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-about.title")} body={t("Landing.link-about.body")} linkText={t("Landing.link-about.linkText")} linkRoute="/about"/>
   <div className="border-rooms-warm"></div>
-  <LandingLink title="客房介紹" body="潔淨舒適大床，大衣櫥收納，多種免費飲品，數位電視頻道，無線上網。衛生整潔由專人負責，是我們最在乎的基本要求。客房不多，所以可以堅持更多。溫馨燈光中，平實顯優雅。" linkText="客房介紹" linkRoute="/rooms"/>
+  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-rooms.title")} body={t("Landing.link-rooms.body")} linkText={t("Landing.link-rooms.linkText")} linkRoute="/rooms"/>
   <div className="border-rooms-warm"></div>
-  <LandingLink title="交通與活動" body="只要資訊充足，花蓮蠻適合自由行。我們會提供協助及諮詢：代辦泛舟、賞鯨、溯溪等活動，花蓮海洋公園、兆豐農場優惠門票及各種套裝行程，代租交通工具。" linkText="交通及觀光指南" linkRoute="/destinations"/>
+  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-destinations.title")} body={t("Landing.link-destinations.body")} linkText={t("Landing.link-destinations.linkText")} linkRoute="/destinations"/>
 </div>
     </div>
 

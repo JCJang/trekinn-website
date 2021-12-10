@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="flex flex-col w-full sm:w-1/2">
             <div className="h3 sm:text-base">
               <div className="leading-9">
-              《美崙遊記》 970 花蓮市<br className="sm:hidden"></br>中興路179號
+              {t("Footer.address-1")}<br className="sm:hidden"></br>{t("Footer.address-2")}
               </div>
             </div>
             <div className="captions text-xs mt-1 tracking-widest">
-              花蓮縣合法民宿登記證第282號
+              {t("Footer.license")}
             </div>
             <div className="captions mt-auto hidden sm:block">
               © 2006 - 2021 Trekinn, All rights reserved.
@@ -23,13 +23,13 @@ const Footer = () => {
         </div>
         <div className="w-full flex flex-row sm:flex-col sm:m-0 sm:w-1/5 text-accent-green captions">
             <div className="flex flex-col mt-4 sm:mt-0 mx-auto sm:mx-0 text-left">
-              <div>點擊撥打：</div>
+              <div>{t("Footer.callPrompt")}</div>
               <a href="tel:+886983661588">0983-661588</a>
-              <a href="tel:+88638228430">03-8228430 ( 日間 )</a>
+              <a href="tel:+88638228430">03-8228430 ( {t("Footer.day")} )</a>
               <a href="tel:+886920313243">0920-313243 ( English )</a>
             </div>
             <div className="mt-auto sm:mt-auto ml-4 mx-auto sm:ml-0 sm:mt-2">
-              <Link to="/contact">更多聯絡方式<ArrowRightOutlinedIcon className="pb-1"/></Link>
+              <Link to="/contact">{t("Footer.more")}<ArrowRightOutlinedIcon className="pb-1"/></Link>
           </div>
         </div>
       </div>

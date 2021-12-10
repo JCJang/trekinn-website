@@ -67,7 +67,7 @@ const Navbar = () => {
   </div>
 
   <a href="tel:+886983661588"v className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
-    <PhoneInTalkOutlinedIcon className="pb-1"/>{t(Navbar.callus)}
+    <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
   </a>
 
   </nav>

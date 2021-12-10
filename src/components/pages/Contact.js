@@ -13,10 +13,7 @@ import MapsUgcOutlinedIcon from '@mui/icons-material/MapsUgcOutlined';
 import ChatBubbleOutlinedIcon from '@mui/icons-material/ChatBubbleOutlined';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
-const Contact = ({
-  contacttitle="聯絡我們",
-  contactbody1="夜間10點後，訂房工作人員已經休息，無法接聽電話。請傳簡訊、使用LINE聯絡或透過EMail與我們聯繫，我們會儘快回覆您。謝謝。"
-}) => {
+const Contact = () => {
 
   const {t, i18n} = useTranslation();
   return (
@@ -38,17 +35,17 @@ const Contact = ({
     <NavbarDark/>
           <div className="flex flex-col h-full md:flex-row items-center content-center text-background-cool p-6 md:p-10 md:pt-18">
             <div className="flex flex-col md:flex-grow w-full md:w-5/12 items-center text-left md:text-left py-8">
-            <h3 className="h3 lg:h3-lg text-left w-full md:w-64 opacity-50">{contacttitle}</h3>
-            <div className="body py-4 lg:body-lg text-left w-full md:w-64">{contactbody1}</div>
+            <h3 className="h3 lg:h3-lg text-left w-full md:w-64 opacity-50">{t("Contact.h1")}</h3>
+            <div className="body py-4 lg:body-lg text-left w-full md:w-64">{t("Contact.p1")}</div>
             </div>
 
             <div className="md:p-10 md:pt-18 grid grid-rows-3 md:mr-16 w-full md:w-5/12 justify-center items-center row-gap-1 col-gap-3" style={{gridTemplateColumns:"2.5rem 30% calc(70% - 2.5rem)"}}>
-            <LocalPhoneSharpIcon className="text-accent-blue w-3"/><div className="card">電話、簡訊</div>
+            <LocalPhoneSharpIcon className="text-accent-blue w-3"/><div className="card">{t("Contact.phone+text")}</div>
             <div>
             <a href="tel:+886983661588" data-interaction="Interaction - Phone Contact" className="card underline">0983-661-588</a><br></br>
             <a href="tel:+88638228430" className="card underline">03-8228430</a>
             </div>
-            <AlternateEmailSharpIcon className="text-accent-blue w-3"/><div className="card">Email</div><a href="mailto:trekinnez@gmail.com" className="card underline" data-interaction="Interaction - Email Contact">trekinnez@gmail.com</a>
+            <AlternateEmailSharpIcon className="text-accent-blue w-3"/><div className="card">{t("Contact.email")}</div><a href="mailto:trekinnez@gmail.com" className="card underline" data-interaction="Interaction - Email Contact">trekinnez@gmail.com</a>
             <span className="text-sm font-medium text-accent-blue w-3 tracking-tighter">LINE</span>
             <div className="card">LINE ID</div>
             <a className="card underline" href="https://line.me/R/ti/p/trekinnez" target="_blank">trekinnez</a>
