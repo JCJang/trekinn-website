@@ -37,7 +37,7 @@ const NavbarDark = () => {
 
       <div className="flex flex-col w-full gap-3 lg:gap-0 lg:w-auto lg:flex-row relative">
       <div className="flex lg:block">
-      <NavLinkDark linkText={t("Navbar.trekinn")} linkRoute="/about" currentPath={location.pathname}/>
+      <NavLinkDark linkText={t("Navbar.about")} linkRoute="/about" currentPath={location.pathname}/>
       </div>
       <div className="border-dark opacity-50"></div>
 

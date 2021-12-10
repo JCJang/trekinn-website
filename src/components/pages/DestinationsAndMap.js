@@ -66,7 +66,7 @@ const DestinationsAndMap = () => {
           <div id="region" className="w-full flex flex-col lg:w-1/2 p-6 lg:pl-16">
             <div id="local" className="mb-3 lg:mt-16 lg:pt-2">
               <div className="body sm:body text-grey-darkest">
-                  {t("DestinationsAndMap.destinations+traffic.p1")}
+                  {t("DestinationsAndMap.destinations+traffic.p1")}<span className='text-grey-dark'>               {t("DestinationsAndMap.destinations+traffic.p2")}</span>                 {t("DestinationsAndMap.destinations+traffic.p3")}
               </div>
               <div className="card lg:card-lg flex flex-row mt-3">
                 <div className="text-right mr-6 text-grey-dark w-1/2">
