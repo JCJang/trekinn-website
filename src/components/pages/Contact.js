@@ -1,5 +1,7 @@
 import React from 'react'
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
+
+import { useTranslation } from 'react-i18next'
 import IntraWebLink from '../util/IntraWebLink.js'
 import NavbarDark from '../util/NavbarDark.js'
 import Footer from '../util/Footer.js'
@@ -15,6 +17,8 @@ const Contact = ({
   contacttitle="聯絡我們",
   contactbody1="夜間10點後，訂房工作人員已經休息，無法接聽電話。請傳簡訊、使用LINE聯絡或透過EMail與我們聯繫，我們會儘快回覆您。謝謝。"
 }) => {
+
+  const {t, i18n} = useTranslation();
   return (
     <div className="bg-grey-darkest w-screen h-screen overflow-y-scroll">
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
 
+import { useTranslation } from 'react-i18next'
+
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import Carousel from '../util/Carousel.js'
 import Navbar from '../util/Navbar.js'
@@ -17,6 +19,8 @@ import hualienCoast from '../../photos/destinations/hualien-coast.jpg'
 // <h1 className="mt-20 mx-16 h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 opacity-50">客房介紹</h1>
 
 const DestinationsAndMap = () => {
+  const {t, i18n} = useTranslation();
+  
   return (<div className="bg-background h-screen overflow-y-scroll">
     <Helmet>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>

@@ -1,5 +1,6 @@
 import landing from '../../photos/landing.jpg'
 import {Helmet} from "react-helmet";
+import { useTranslation } from 'react-i18next'
 
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import LandingLink from '../util/LandingLink.js'
@@ -9,6 +10,8 @@ import {Link} from 'react-router-dom'
 import NavbarDark from '../util/NavbarDark.js'
 
 const Landing = () => {
+  const {t, i18n} = useTranslation();
+  
   return (
     <div className="bg-background-beige h-screen overflow-y-scroll">
   <Helmet>

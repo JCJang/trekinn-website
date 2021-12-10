@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {Link} from 'react-router-dom'
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 
 const Footer = () => {
+  const {t, i18n} = useTranslation();
   return (
     <footer className="w-screen p-6 bg-warm flex flex-col items-center justify-center text-center sm:text-left">
       <div className="flex flex-col w-full sm:flex-row text-background justify-center">

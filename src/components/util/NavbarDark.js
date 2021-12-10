@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import NavLinkDark from './NavLinkDark.js'
 import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
@@ -8,7 +9,7 @@ import {useState, useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 
 const NavbarDark = () => {
-
+  const {t, i18n} = useTranslation();
   const [navOpen, setNavOpen] = useState(false)
   const location = useLocation();
 

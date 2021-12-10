@@ -1,5 +1,7 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
+import { useTranslation } from 'react-i18next'
+
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import Carousel from '../util/Carousel.js'
 import Navbar from '../util/Navbar.js'
@@ -46,7 +48,7 @@ const Rooms = ({
   TwoBedroomPeakPrice = "1500",
   TwoBedroomOffpeakPrice = "1200"
 }) => {
-
+  const {t, i18n} = useTranslation();
   return (<div className="bg-background h-screen overflow-y-scroll">
   <Helmet>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
