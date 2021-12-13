@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 const LandingLink = ({verticalTitle=true, title="", body="", linkText="", linkRoute=""}) => {
   const {t, i18n} = useTranslation();
 
-  return (<div className={t("Navbar.language")!=="en"?"bg-background-beige text-accent flex p-6 px-8 lg:max-w-33":"bg-background-beige text-accent flex p-6 sm:max-w-33"}>
+  return (<div className={t("Navbar.language")!=="en"?"bg-background-beige text-accent flex p-6 px-8 lg:max-w-33":"bg-background-beige text-accent flex p-6"}>
     {verticalTitle &&
       <div className="h2 lg:h2-lg vertical fit-content tracking-tighter opacity-75 opacity-75" style={{
         margin: "0.35rem 1.7rem 0 1rem"

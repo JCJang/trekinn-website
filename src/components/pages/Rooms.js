@@ -1,6 +1,9 @@
-import React from 'react'
+import {useState} from 'react'
 import {Helmet} from 'react-helmet'
 import { useTranslation } from 'react-i18next'
+
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
 
 import {ReactComponent as MountainLogo} from '../../photos/mountain-logo.svg'
 import Carousel from '../util/Carousel.js'
@@ -46,9 +49,11 @@ const Rooms = ({
   FourBedroomPeakPrice = "",
   FourBedroomOffpeakPrice = "",
   TwoBedroomPeakPrice = "",
-  TwoBedroomOffpeakPrice = ""
+  TwoBedroomOffpeakPrice = "",
+  Announcements = ""
 }) => {
   const {t, i18n} = useTranslation();
+  const [showAnnouncements, setShowAnnouncements] = useState(true)
   return (<div className="bg-background h-screen overflow-y-scroll">
   <Helmet>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
@@ -67,6 +72,25 @@ const Rooms = ({
 </Helmet>
     <Navbar/>
     <div>
+    {
+      Announcements &&
+    <div id="Announcements" className="w-10/12 flex md:w-2/3 lg:w-1/2 p-3 px-5 pr-16 z-40 shadow-md text-accent-red bg-background-beige absolute border-2 border-background-cool right-0 duration-300" style={{top:"4rem", display:!showAnnouncements && "none"}}>
+    <div>{Announcements}</div>
+    </div>
+    }
+    {
+      Announcements && showAnnouncements &&
+    <div id="AnnouncementsToggler" onClick={()=>{setShowAnnouncements(!showAnnouncements)}} className="p-3 px-4 z-50 hover:text-accent-blue text-accent-red bg-background-beige absolute right-0" style={{top:"4.1rem",right:"0.2rem"}}>
+    <CloseOutlinedIcon/>
+    </div>
+    }
+    {
+      Announcements && !showAnnouncements &&
+    <div id="AnnouncementsToggler" onClick={()=>{setShowAnnouncements(!showAnnouncements)}} className="p-3 pb-4 px-4 z-50 text-background-cool border-2 border-background-cool shadow hover:text-accent-blue bg-accent-red absolute right-0 pr-6" style={{top:"4.1rem"}}>
+    <CampaignOutlinedIcon/>
+    </div>
+    }
+
     <h1 className="h3 hidden sm:block mt-10 sm:mt-24 sm:px-20 mx-6 sm:mx-0 m-1 my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">{t("Rooms.h1")}</h1>
 
       <div className="flex flex-col lg:flex-row mt-10 sm:mt-0 items-center">
