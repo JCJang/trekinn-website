@@ -1,0 +1,36 @@
+//Genseki
+@font-face {
+    font-family: "Genseki";
+    src: local('Genseki'),local('GenSeki'),local('GenSekiGothic'),local('GenSekiGothicTW'),local('Genseki-Gothic'),url("./fonts/Genseki/GenSekiGothicTW-R-01.woff2") format('woff2'),
+        url("./fonts/Genseki/GenSekiGothicTW-R-01.woff") format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+//Genwan
+
+@font-face {
+    font-family: "Genwan";
+    src: local('Genwan'),local('GenWanMin'),local('GenWanMinTW'),url("./fonts/Genwan/GenWanMinTW-R-01.woff2") format('woff2'),
+    url("./fonts/Genwan/GenWanMinTW-R-01.woff") format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Genwan";
+    src: local('Genwan'),local('GenWanMin'),local('GenWanMinTW'),url("./fonts/Genwan/GenWanMinTW-SB-01.woff2") format('woff2'),
+    url("./fonts/Genwan/GenWanMinTW-SB-01.woff") format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+
+.genwan{
+  font-family: "Genwan";
+}
+
+
+.genseki{
+  font-family: "Genseki";
+}
