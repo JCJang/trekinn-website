@@ -76,7 +76,7 @@ const Navbar = () => {
     <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
   </a>
   {t("Navbar.language")==="en"?
-  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}}>
+  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
     <LanguageOutlinedIcon className="pb-1"/>{t("Navbar.changeTo")}
   </div>
   :
@@ -88,8 +88,8 @@ const Navbar = () => {
       </button>
       <div className="bg-background lg:origin-top-right absolute origin-bottom bottom-0 lg:bottom-auto mb-16 lg:mb-0 mr-12 lg:right-0 lg:mt-10 w-56 rounded-md shadow-lg bg-transparent focus:outline-none" style={{display:!languageDropdownOpen && "none"}} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
       <div className="py-1" role="none">
-          <div className="text-center text-accent hover:bg-accent-blue hover:shadow-none" onClick={()=>{i18n.changeLanguage("zhtw")}}>繁體</div>
-          <div className="text-center text-accent hover:bg-accent-blue hover:shadow-none"  onClick={()=>{i18n.changeLanguage("zhcn")}}>简体</div>
+          <div className="text-center text-accent hover:bg-accent-blue hover:shadow-none" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhtw")}}>繁體</div>
+          <div className="text-center text-accent hover:bg-accent-blue hover:shadow-none" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhcn")}}>简体</div>
       </div>
   </div>
   </>
