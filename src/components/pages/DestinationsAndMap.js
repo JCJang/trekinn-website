@@ -28,7 +28,7 @@ const DestinationsAndMap = () => {
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 <meta name="format-detection" content="telephone=yes"></meta>
 <title>{t("DestinationsAndMap.title")}</title>
-<meta name="Description" content="民宿重要資訊公告,花蓮 景點 行程 活動 美食,花蓮民宿 住宿 合作商家"></meta>
+<meta name="Description" content="民宿重要資訊公告,花蓮,景點,行程,活動,美食,花蓮民宿,住宿,合作商家"></meta>
 <meta name="keywords" content="花蓮民宿資訊,花蓮景點,花蓮旅遊,花蓮行程,花蓮活動,花蓮美食,花蓮好吃"></meta>
 <meta name="robots" content="index,follow"></meta>
 <meta name="rating" content="general"></meta>

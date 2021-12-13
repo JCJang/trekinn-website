@@ -31,7 +31,7 @@ body {
 }
 
 .captions-lg{
-  @apply tracking-wide font-medium;
+  @apply tracking-wide font-normal;
   font-size: 0.9rem;
   font-family: "Roboto", "Genwan";
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .captions{
-  @apply tracking-wide font-medium leading-5;
+  @apply tracking-wide font-normal leading-5;
   font-size: 0.9rem;
   font-family: "Roboto", "Genwan";
 }
