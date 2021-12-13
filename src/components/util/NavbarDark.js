@@ -1,5 +1,6 @@
 import React from 'react'
 import i18n from './../../i18n.js'
+import useClickOutside from './useClickOutside'
 
 import {Link} from 'react-router-dom'
 import NavLinkDark from './NavLinkDark.js'
@@ -8,7 +9,7 @@ import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 const NavbarDark = () => {
@@ -17,7 +18,11 @@ const NavbarDark = () => {
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false)
 
   const location = useLocation();
-
+  const navRef = useRef()
+    useClickOutside(navRef, () => {
+      if (navOpen)
+        setNavOpen(false)
+    })
   return (<>
       <div className="lg:hidden z-50 cursor-pointer absolute p-4 text-background-cool" onClick={()=>{setNavOpen(!navOpen)}}>
       {navOpen?
@@ -27,7 +32,7 @@ const NavbarDark = () => {
       }
       </div>
 
-      <nav className="glassDark z-20 shadow h-screen w-64 lg:h-12 pt-3 lg:pt-2 p-2 lg:w-nav-lg  absolute top-0 text-background-cool flex flex-col lg:flex-row justify-between content-center px-4 duration-300" style={{
+      <nav ref={navRef} className="glassDark z-20 shadow h-screen w-64 lg:h-12 pt-3 lg:pt-2 p-2 lg:w-nav-lg  absolute top-0 text-background-cool flex flex-col lg:flex-row justify-between content-center px-4 duration-300" style={{
     left:navOpen?"0px":"-16rem"
   }}>
 
