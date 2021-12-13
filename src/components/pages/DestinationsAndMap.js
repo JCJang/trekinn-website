@@ -11,7 +11,7 @@ import PhotoHolder from '../util/PhotoHolder.js'
 import IntraWebLink from '../util/IntraWebLink.js'
 
 //photos
-import lakePeaceful from '../../photos/destinations/lake-peaceful-desat.jpg'
+import lakePeaceful from '../../photos/destinations/lake-peaceful.jpg'
 import tarokoTrial from '../../photos/destinations/taroko-trail.jpg'
 import lakeCanoing from '../../photos/destinations/lake-canoing.jpg'
 import hualienCoast from '../../photos/destinations/hualien-coast.jpg'
