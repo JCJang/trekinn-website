@@ -6,7 +6,9 @@
     "rooms":"訂房",
     "contact":"聯絡資訊",
     "home":"回首頁",
-    "callus":"撥打民宿電話"
+    "callus":"撥打民宿電話",
+    "changeTo":"English",
+    "language":"en"
   },
   "About":{
     "lobbycaption":"民宿大廳",
@@ -157,7 +159,7 @@
       "peak":"假日",
       "peakConditions":"指連續假日、週五、週六。部分房型的寒暑假期間。",
       "offpeak":"平日",
-      "offpeakConditions":"指週日至週四。以上不含農曆新年假期，春節優惠價格於年前公告。"
+      "offpeakConditions":"指週日至週四。以上不含農曆新年假期，春節優惠價格於年前公告。網站上公佈的價格，每日促銷房價可能更便宜。請先來電或透過網路詢問每日給您的優惠房價。"
     },
     "time+amenities":{
       "checkin":"入住",

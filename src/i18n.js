@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import translationZHTW from './translations/translationZHTW.json'
+import translationZHCN from './translations/translationZHCN.json'
 import translationEN from './translations/translationEN.json'
 
 
@@ -21,11 +22,15 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
     resources: {
-      en: {
-        translation: translationEN
-      },
+
       zhtw: {
         translation: translationZHTW
+      },
+      zhcn: {
+        translation: translationZHCN
+      },
+      en: {
+        translation: translationEN
       }
     }
   });

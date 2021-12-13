@@ -1,8 +1,13 @@
 import React from 'react'
+import i18n from './../../i18n.js'
+
 import {Link} from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import NavLinkDark from './NavLinkDark.js'
 import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
+import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
+import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import {useState, useEffect} from 'react'
@@ -11,6 +16,8 @@ import { useLocation } from 'react-router-dom'
 const NavbarDark = () => {
   const {t, i18n} = useTranslation();
   const [navOpen, setNavOpen] = useState(false)
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false)
+
   const location = useLocation();
 
   return (<>
@@ -67,8 +74,30 @@ const NavbarDark = () => {
 
     </div>
 
-    <a href="tel:+886983661588"v className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
-      <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}</a>
+    <div className="flex flex-col lg:flex-row">
+    <a href="tel:+886983661588" className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 lg:mr-0 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
+      <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
+    </a>
+    {t("Navbar.language")==="en"?
+    <div onClick={()=>{i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}}>
+      <LanguageOutlinedIcon className="pb-1"/>{t("Navbar.changeTo")}
+    </div>
+    :
+    <>
+        <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
+          <LanguageOutlinedIcon className="pb-1"/>
+          中文版
+          <ExpandMoreOutlinedIcon className="pb-1"/>
+        </button>
+        <div className="bg-background lg:origin-top-right absolute origin-bottom bottom-0 lg:bottom-auto mb-16 lg:mb-0 mr-12 lg:right-0 lg:mt-10 w-56 rounded-md shadow-lg bg-transparent focus:outline-none" style={{display:!languageDropdownOpen && "none"}} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+        <div className="py-1" role="none">
+            <div className="text-center text-accent hover:text-background hover:bg-accent-blue" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhtw")}}>繁體</div>
+            <div className="text-center text-accent hover:text-background hover:bg-accent-blue" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhcn")}}>简体</div>
+        </div>
+    </div>
+    </>
+  }
+    </div>
 
     </nav>
 </>)
