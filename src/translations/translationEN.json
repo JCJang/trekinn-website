@@ -18,31 +18,31 @@
     "h1":"About",
     "h2-1":"Welcome to",
     "h2-2":"Hualien-based Trekinn",
-    "p1":"No matter where you travel in Hualien, one of the best natural getaways in Taiwan,《Trekinn》 is the perfect choice to stay for comfort and convenience. Price-conscious travelers would find, though our low room rates, we give good service and amenities they want and expect. Whole building is air-conditioned well by the Mitsubishi's ventilation system at low DB values. Heat-pump water heating design makes sure guests can enjoy Massage shower anytime. Each room has one or two clean double beds, TV with various HD channels in English, free selective drinks, and closets with well arranged shelves. Just log in and you would surf Internet with WiFi. Clean work is so cared by our staff, and that is base of our core values.",
-    "p2":"《Trekinn》 is in the neighborhood of the Hualien Golf Club, and you can have fun in there without membership. Bikes are here for our guests without charge. It's about 10 minutes to seashore by bikes, and 10 minutes more to the downtown for Starbucks or local cuisines. Parkview hotel is steps away and you may have a good meal there. Anyway, it's not a good idea to pay much for swimming and funs inside there. So lodge at 《Trekinn》 and go out for mountainous beauty of the Taroko Gorge, out-of-coast whale and dolphin watching, scenic spots on the road number 9 along the mountain side and the 11 along the eastern Pacific coast.",
-    "p3":"Package tours are available for half or one day long without worry about transportation. However, it seems better to drive a vehicle traveling around wild Hualien if travel information is collected well before you hit the road. Surely we can assist you if help is needed.《Trekinn》 is small but nicely laid out for quiet stay in city area. You may make a call to contact us for reservation. Leaving messages on our web site's contact zone or email to us is preferred for complete answers. The promotional programs and the discounted rates at each season are put on the bulletin. We look forward to having you as our guest and making your stay comfortable and enjoyable.",
-    "p4":"《 美崙遊記 》是花蓮市區合法民宿，不是MOTEL也不是HOTEL，沒有閒雜人等。我們沒有營造一堆特色，因為特色留給花蓮，尤其是寬闊的東岸大自然景觀及悠閒的人文風情。"
+    "p1":"Trekinn is a small inn located in a quiet area of Hualien city. No matter where you choose to travel in Hualien - one of the best natural getaways in Taiwan - Trekinn is the perfect accomodation for your comfort and convenience. We provide excellent service and amenities for price-conscious travelers, from the basic air-conditioning, hot water, and WiFi, to TVs with various HD channels in English, free drinks, and closets with well arranged shelves. Cleanliness is at the heart of our hospitality practices, and all cleaning is put in the hands of professional staff.",
+    "p2":"Trekinn and is at proximity to several convenience stores, and it also in the vicinity of the Hualien Golf Club, which you can visit without membership. In addition, we provide free bikes for our guests, by which you can reach the seashore in a short 10 minute ride, or head downtown for Starbucks or local cuisines. Parkview hotel is steps away and you can find good options for meals there. We welcome you to lodge at Trekinn and explore the beautiful Taroko Gorge, visit the Hualien coast for whale and dolphin watching, or simply enjoy all the scenic spots on road number 9, which meanders along the mountainside, or road number 11, which takes you along the Pacific coast.",
+    "p3":"We highly recommend that you explore Hualien by vehicle, and collect travel information before you hit the road. We can assist you with planning your trip if you need any help. However, if you don't want to worry about transportation, we also partner with package tour companies, who offer both half-day and day-long trips. You may make a call to contact us for reservation, or send us an email. Promotional programs with discounted seasonal rates are put on the bulletin. We look forward to having you as our guest and making your stay in Hualien comfortable and enjoyable.",
+    "p4":""
   },
   "Contact":{
     "h1":"Contact",
-    "p1":"夜間10點後，訂房工作人員已經休息，無法接聽電話。請傳簡訊、使用LINE聯絡或透過EMail與我們聯繫，我們會儘快回覆您。謝謝。",
-    "phone+text":"電話、簡訊",
-    "email":"電子郵件"
+    "p1":"Our front desk is unstaffed after 10PM. Instead of calling, please text us via phone or the LINE app, or send us an email, and we will get back to you as soon as possible. We appreciate your understanding.",
+    "phone+text":"Call, Text",
+    "email":"Email"
   },
   "DestinationsAndMap":{
-    "title":"美崙遊記:重要資訊、花蓮景點及活動、花蓮美食、合作商",
-    "h1":"觀光指南及地圖",
+    "title":"Trekinn: Travel information, Hualien attractions and activities, Hualien food, partner businesses",
+    "h1":"Destinations and Trekinn Map",
     "destinations+traffic":{
-      "mapcaptions":"《美崙遊記》 970 花蓮市中興路179號",
-      "mapbutton":"檢視較大的地圖，可導航",
-      "h2":"Travel times to POI",
+      "mapcaptions":"Trekinn - No. 179, Zhongxing Rd, Hualien City, Hualien County, 970",
+      "mapbutton":"Open Google Maps for navigation",
+      "h2":"Travel Times to popular Hualien Destinations",
       "p1":"Please refer to the following ",
-      "p2":"points of interest",
-      "p3":" and click it into Google Map for the detailed route from Trekinn:",
+      "p2":"points of interest.",
+      "p3":" You may click on them to see the detailed route from Trekinn:",
       "l1":"Hualien Train Station:",
       "l2":"Hualien Airport:",
       "l3":"Whale Watching Wharf:",
-      "l4":"Chi Hsin Tan Beach:",
+      "l4":"Qixingtan Beach:",
       "l5":"Downtown Starbucks:",
       "l6":"Eastern Gate Night Market:",
       "l7":"Liyu Lake:",
@@ -52,97 +52,97 @@
       "l11":"Taroko Gorge National Park:"
     },
     "packages":{
-      "h2":"交通套裝行程服務",
-      "h3-1":"太魯閣、花東縱谷、東海岸、、、等半日遊一日遊",
-      "p1":"花蓮旅遊可自行坐車或開車自由行, 也可以3或4人包車, 由有經驗的司機導遊到各個您喜歡的景點. 您也可以參加美崙遊記與旅行社合作的巴士遊. 美崙遊記可以代為辦理包車, 協助報名各種巴士遊, 歡迎洽詢0983-661588。",
-      "h3-2":"各種叫車包車套裝行程服務",
-      "p2":"美崙遊記民宿挑選優質計程車、中小客車、租車公司、旅行社各景點套裝行程，服務品質較有保障，價錢也可能較為便宜，可配合房客彈性調整。另外還有提供代辦賞鯨,泛舟、獨木舟、溯溪、溫泉...等行程及優惠門票。歡迎詢問，我們會提供建議，協助安排適合您的預算及行程。",
-      "h3-3":"包車旅遊可以協助你找到好司機",
-      "p3":"如果有3人以上出遊, 可以考慮包一輛車, 由美崙遊記合作車行優良司機, 帶您去想去的景點. 考量旅遊時效及方便, 合理價錢我們會給于建議, 適合初次來大花蓮地區旅遊者. 包車可以提早預定或入住時決定, 歡迎洽詢0983-661588。",
-      "lakeCanoingCaption":"鯉魚潭獨木舟水上活動",
-      "hualienCoastCaption":"花蓮的東岸大自然景觀",
-      "tarokoTrialCaption":"太魯閣國家公園錐麓古道"
+      "h2":"Transportation Services and Package Tours",
+      "h3-1":"Half-day and full-day tours to Taroko Gorge, Huadong Rift Valley, East Coast, etc.",
+      "p1":" Trekinn partners with high-quality taxi drivers, small and medium-sized bus companies, car rental agencies, and travel agencies that offer various attractions packaged bus tours. Their service quality is more guaranteed, and they may offer cheaper, flexible prices and itineraries per guest preference. We offer registration assistance. If you need this service, please contact us at 0983-661588.",
+      "h3-2":"Activities, itineraries, and tickets at discount rates",
+      "p2": "We can also assist you in signing up for activities in Hualien, including tickets and packages for whale watching, white water rafting, canoeing, river trekking, hot springs etc. Inquiries are welcome, and we will provide suggestions and assistance in arranging an itinerary around your travel dates and budget.",
+      "h3-3":"High quality taxi rentals",
+      "p3":"Hualien is best experienced by car, and if you prefer to leave someone else to the driving, you may rent a taxi for the day. We partner with experienced drivers that can take you to various attractions, which is a good option if this is your first time visiting Hualien. We can help you set up an itinerary that is both efficient and at a reasonable price. You can either book the trip in advance or decide upon check-in.",
+      "lakeCanoingCaption":"Liyutan Canoe Water Activities",
+      "hualienCoastCaption":"Hualien's east coast natural landscape",
+      "tarokoTrialCaption":"Zilu Trail in Taroko National Park"
     },
     "glossary":{
-    "h2":"觀光地點連結一覽",
+    "h2":"Hualien Sightseeing Guide",
     "activities":{
-      "h3":"花蓮景點及活動",
-      "l1":"太魯閣國家公園",
-      "l2":"東海岸風景區",
-      "l3":"松園別館",
-      "l4":"吉安慶修院",
-      "l5":"花東縱谷",
-      "l6":"七星潭",
-      "l7":"鯉魚潭",
-      "l8":"林田山",
-      "l9":"花蓮光復糖廠",
-      "l10":"遠雄海洋公園",
-      "l11":"兆豐農場",
-      "l12":"秀姑巒溪泛舟",
-      "l13":"賞鯨",
-      "l14":"溯溪",
-      "l15":"花蓮漁港"
+      "h3":"Destinations and Activities",
+      "l1":"Taroko National Part",
+      "l2":"East Coast National Scenic Area",
+      "l3":"Pine Garden",
+      "l4":"Ji-an Yoshino Shrine",
+      "l5":"East Rift Valley National Scenic Area",
+      "l6":"Qixingtan Beach",
+      "l7":"Liyu Lake",
+      "l8":"Lintianshan Cultural Park",
+      "l9":"Hualien Tourism Sugar Factory",
+      "l10":"Farglory Ocean Park",
+      "l11":"Harvest Ranch Resort",
+      "l12":"Rafting",
+      "l13":"Whale watching",
+      "l14":"River Trekking",
+      "l15":"Hualien Fishing Harbor"
     },
     "food":{
-      "h3":"花蓮美食",
-      "l1":"東大門夜市",
-      "l2":"來成排骨麵",
-      "l3":"孔記",
-      "l4":"鍾老爹牛肉麵",
-      "l5":"鵝肉先生",
-      "l6":"來來包子",
-      "l7":"海埔蚵仔煎",
-      "l8":"炸蛋蔥油餅",
-      "l9":"榕樹下小吃",
-      "l10":"蹦康肉圓",
-      "l11":"一碗小",
-      "l12":"惠比須",
-      "l13":"德利豆乾",
-      "l14":"曾記麻糬",
-      "l15":"正品蚵仔煎",
-      "l16":"外婆家無菜單料理"
+      "h3":"Local Cuisines",
+      "l1":"Dongdaemun Night Market",
+      "l2":"Laecheng Pork Noodles",
+      "l3":"Kong Ji Taiwanese Restaurant",
+      "l4":"Zhong Lao Die Beef Noodle Restaurant",
+      "l5":"Mr.Goose Restaurant",
+      "l6":"Lai Lai Steamed Buns",
+      "l7":"Haipu Oyster Omelette",
+      "l8":"Fried Egg Scallion Pancake",
+      "l9":"Banyan tree eatery",
+      "l10":"Beng Kang Ba-wan",
+      "l11":"Yi Wan Xiao Noodles",
+      "l12":"Ebisu Baked Goods",
+      "l13":"Deli firm tofu",
+      "l14":"Tzen’s Mochi",
+      "l15":"Zhengping Oyster Omelette",
+      "l16":"Grandma's Omakase Taiwanese restaurant"
     }
   },
     "other":{
-    "h2":"其他連結",
+    "h2":"Other Links",
     "related":{
-      "h3":"相關網站",
-      "l1":"花蓮觀光資訊網",
-      "l2":"台灣鐵路局",
-      "l3":"花蓮航空站",
-      "l4":"即時路況",
-      "l5":"花蓮客運",
-      "l6":"太魯閣客運(電動車)"
+      "h3":"Related Websites",
+      "l1":"Hualen Tourist Service Network",
+      "l2":"Taiwan Railway",
+      "l3":"Hualien Airport",
+      "l4":"Real-time Traffic Information",
+      "l5":"Hualien Bus",
+      "l6":"Taroko Bus (electric buses)"
     },
     "partner":{
-      "h3":"合作商",
+      "h3":"Partner Businesses",
       "l1":"Booking.com",
-      "l2":"e-go台灣租車",
-      "l3":"鯨世界",
-      "l4":"東海泛舟",
-      "l5":"溯溪王"
+      "l2":"E-go Car Rentals",
+      "l3":"Whale World Tours",
+      "l4":"East Sea Rafting",
+      "l5":"The River King"
     }
   }
   },
   "Landing":{
-    "h1":"美崙遊記",
-    "p1":"無論旅遊或出外，找優質花蓮住宿，《 美崙遊記 》是提供友善便利環境的平價花蓮民宿。感覺我們的用心，找一個符合期待的停頓空間。",
-    "actionButton":"立即訂房",
-    "readMore": "下滑閱讀更多",
+    "h1":"Trekinn",
+    "p1":"No matter where you choose to travel in Hualien - one of the best natural getaways in Taiwan - Trekinn is the perfect accomodation for your comfort and convenience.",
+    "actionButton":"Book Now",
+    "readMore": "read more below",
     "link-about": {
-      "title": "民宿簡介",
-      "body": "《 美崙遊記 》是花蓮市區優良合法民宿，從2006年營業至今，也榮獲花蓮縣政府頒衛生優良獎，住宿品質有保障。民宿平實優雅、設施齊全，是預算內花蓮旅遊出外住宿的好選擇。",
-      "linkText": "民宿簡介"
+      "title": "About",
+      "body": "Trekinn is a quality legal homestay registered with Hualien city, and has been awarded Huanlien County government's Award for sanitation excellence. The small inn has been operating since 2006, and offers a quiet and comfortable stay for price-conscious travelers.",
+      "linkText": "About"
     },
     "link-rooms": {
-      "title": "客房介紹",
-      "body": "潔淨舒適大床，大衣櫥收納，多種免費飲品，數位電視頻道，無線上網。衛生整潔由專人負責，是我們最在乎的基本要求。客房不多，所以可以堅持更多。溫馨燈光中，平實顯優雅。",
-      "linkText": "客房介紹"
+      "title": "Rooms",
+      "body": "We provide simple but complete amenities for your stay, from the basic air-conditioning, hot water, and WiFi, to TVs with various HD channels in English, free drinks, and closets with well arranged shelves. Cleanliness is at the heart of our hospitality practices, and all cleaning is put in the hands of professional staff.",
+      "linkText": "Rooms"
     },
     "link-destinations": {
-      "title": "交通與活動",
-      "body": "只要資訊充足，花蓮蠻適合自由行。我們會提供協助及諮詢：代辦泛舟、賞鯨、溯溪等活動，花蓮海洋公園、兆豐農場優惠門票及各種套裝行程，代租交通工具。",
-      "linkText": "交通及觀光指南"
+      "title": "Transportation and Travel Guide",
+      "body": "Hualien is quite suitable for individual travel if you have the right information. We can help you plan your trip and book a variety of services and activities, include rafting, river trekking, whale watching, car rentals, and package tours. We also offer discounted tickets for Farglory Ocean Park, Harvest Ranch Resort.",
+      "linkText": "Transportation and Travel Guide"
     }
   },
   "Rooms":{
@@ -222,36 +222,36 @@
     },
     "packages":{
       "title":"Trip-planning services",
-      "body":"只要資訊充足，花蓮蠻適合自由行。我們會提供協助及諮詢：代辦泛舟、賞鯨、溯溪等活動，花蓮海洋公園、兆豐農場優惠門票及各種套裝行程，代租交通工具。",
-      "linkText":"查看交通及觀光指南"
+      "body":"Hualien is quite suitable for individual travel if you have the right information. We can help you plan your trip and book a variety of services and activities, include rafting, river trekking, whale watching, car rentals, and package tours. We also offer discounted tickets for Farglory Ocean Park, Harvest Ranch Resort.",
+      "linkText":"Transportation and Travel Guide"
     },
     "other":{
-      "h2":"包棟或月租",
+      "h2":"Renting the Whole Place or Planning Month-long stays",
       "allRooms":{
-        "h3":"包棟",
-        "p1":"包棟5房7千元起，詳細請電洽0983-661588。"
+        "h3":"Rent the Whole Place",
+        "p1":"Trekinn has a total of Five Rooms. Available at 7000 NT and up. Inquire at 0983-661588."
       },
       "longterm":{
-        "h3":"停留一個月以上的住宿需求",
-        "p1":"若您有需要停留花蓮較長時間，可住宿合作的月租套房《花蓮EZ套房》，省錢便利。詳情請搜尋《花蓮EZ套房》，或打電話0983-661588問阿香小姐，謝謝。"
+        "h3":"Month-long Stays",
+        "p1":"For stays that exceed one month, you can refer to '花蓮EZ套房' (Hualien EZ studios) for studios at reasonable prices. Search '花蓮EZ套房' for details, or call us at 0983-661588."
         }
     }
 
   },
   "Footer":{
-    "address-1":"《美崙遊記》 970 花蓮市",
-    "address-2":"中興路179號",
-    "license":"花蓮縣合法民宿登記證第282號",
-    "callPrompt":"點擊撥打：",
-    "day":"日間",
-    "more":"更多聯絡方式"
+    "address-1":"Trekinn No. 179, Zhongxing Rd",
+    "address-2":"Hualien City, Hualien County, 970",
+    "license":"Hualien County legal homestay license number 282",
+    "callPrompt":"Tap to call",
+    "day":"daytime",
+    "more":"more contact options"
   },
   "units":{
-    "km":"公里",
-    "min":"分鐘"
+    "km":"km",
+    "min":"min"
   },
   "mod":{
-    "vertical":"true"
+    "vertical":"false"
   }
 
 }

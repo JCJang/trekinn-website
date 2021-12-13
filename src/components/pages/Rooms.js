@@ -71,17 +71,17 @@ const Rooms = ({
 
       <div className="flex flex-col lg:flex-row mt-10 sm:mt-0 items-center">
         <div className="flex sm:hidden bg-background h-full flex-col flex-grow w-full lg:max-w-49 mb-8 lg:mb-0 items-center text-left">
-          <Carousel title={t("Rooms.twoBedroom.title")} imgSources={[twoBedroomOne, twoBedroomTwo, twoBedroomThree, twoBedroomFour, bathroom, lobby, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption={t("Rooms.twoBedroom.caption")}/>
+          <Carousel verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Rooms.twoBedroom.title")} imgSources={[twoBedroomOne, twoBedroomTwo, twoBedroomThree, twoBedroomFour, bathroom, lobby, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption={t("Rooms.twoBedroom.caption")}/>
         </div>
         <div className="hidden sm:flex bg-background h-full flex-col flex-grow md:px-6 lg:ml-8 mb-8 lg:mb-0 w-full lg:max-w-49 items-center text-left">
-          <Carousel title={t("Rooms.twoBedroom.title")} imgSources={[twoBedroomOneLg, twoBedroomTwoLg, twoBedroomThree, twoBedroomFour, bathroom, lobbyLg, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption={t("Rooms.twoBedroom.caption")}/>
+          <Carousel verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Rooms.twoBedroom.title")} imgSources={[twoBedroomOneLg, twoBedroomTwoLg, twoBedroomThree, twoBedroomFour, bathroom, lobbyLg, lobby2]} prices={[TwoBedroomPeakPrice, TwoBedroomOffpeakPrice]} caption={t("Rooms.twoBedroom.caption")}/>
         </div>
         <div className="border-rooms-carousel"></div>
         <div className="flex sm:hidden mt-8 lg:mt-0 bg-background h-full flex-col flex-grow w-full lg:max-w-49 items-center text-left">
-          <Carousel title={t("Rooms.fourBedroom.title")} imgSources={[fourBedroomOne, fourBedroomTwo, bathroom, lobby, lobby2]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption={t("Rooms.fourBedroom.caption")}/>
+          <Carousel verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Rooms.fourBedroom.title")} imgSources={[fourBedroomOne, fourBedroomTwo, bathroom, lobby, lobby2]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption={t("Rooms.fourBedroom.caption")}/>
         </div>
         <div className="hidden sm:flex  mt-8 lg:mt-0  bg-background h-full flex-col flex-grow md:px-8 lg:mr-8 w-full lg:max-w-49 items-center text-left">
-          <Carousel title={t("Rooms.fourBedroom.title")} imgSources={[fourBedroomOneLg, fourBedroomTwoLg, bathroom, lobbyLg, lobby2]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption={t("Rooms.fourBedroom.caption")}
+          <Carousel verticalTitle={JSON.parse(t("mod.vertical"))}     title={t("Rooms.fourBedroom.title")} imgSources={[fourBedroomOneLg, fourBedroomTwoLg, bathroom, lobbyLg, lobby2]} prices={[FourBedroomPeakPrice, FourBedroomOffpeakPrice]} caption={t("Rooms.fourBedroom.caption")}
 />
         </div>
       </div>
@@ -274,7 +274,7 @@ const Rooms = ({
 
       <div id="other" className="caption bg-background text-grey-dark flex flex-col-reverse lg:flex-row">
       <div id="overview" className="w-full sm:pl-16 lg:w-1/2 p-6 bg-background-beige">
-          <IntraWebLink title={t("Rooms.packages.title")} verticalTitle={false} body={t("Rooms.packages.body")} linkText={t("Rooms.packages.linkText")} linkRoute="/destinations"/>
+          <IntraWebLink title={t("Rooms.packages.title")} verticalTitle={JSON.parse(t("mod.vertical"))} body={t("Rooms.packages.body")} linkText={t("Rooms.packages.linkText")} linkRoute="/destinations"/>
       </div>
         <div id="overview" className="w-full sm:px-20 lg:px-16 lg:w-1/2 sm:mx-2 sm:pb-10 lg:m-0 p-6">
           <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">

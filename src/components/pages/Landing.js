@@ -48,11 +48,11 @@ const Landing = () => {
     </div>
 
   <div className="flex flex-col sm:flex-row py-4">
-  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-about.title")} body={t("Landing.link-about.body")} linkText={t("Landing.link-about.linkText")} linkRoute="/about"/>
+  <LandingLink verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Landing.link-about.title")} body={t("Landing.link-about.body")} linkText={t("Landing.link-about.linkText")} linkRoute="/about"/>
   <div className="border-rooms-warm"></div>
-  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-rooms.title")} body={t("Landing.link-rooms.body")} linkText={t("Landing.link-rooms.linkText")} linkRoute="/rooms"/>
+  <LandingLink verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Landing.link-rooms.title")} body={t("Landing.link-rooms.body")} linkText={t("Landing.link-rooms.linkText")} linkRoute="/rooms"/>
   <div className="border-rooms-warm"></div>
-  <LandingLink vertical={JSON.parse(t("mod.vertical"))} title={t("Landing.link-destinations.title")} body={t("Landing.link-destinations.body")} linkText={t("Landing.link-destinations.linkText")} linkRoute="/destinations"/>
+  <LandingLink verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Landing.link-destinations.title")} body={t("Landing.link-destinations.body")} linkText={t("Landing.link-destinations.linkText")} linkRoute="/destinations"/>
 </div>
     </div>
 

@@ -43,7 +43,7 @@ const About = () => {
       <div>{t("About.h2-1")}<br></br>{t("About.h2-2")}</div></h2>
       <div className="body lg:body-lg text-warm w-full sm:w-3/4 my-2">{t("About.p1")}</div>
       <PhotoHolder src={exterior} caption={t("About.exteriorcaption")} className="w-full sm:hidden"/>
-      <div className="body text-warm w-full sm:w-3/4 my-2">{t("About.p3")}</div>
+      <div className="body lg:body-lg text-warm w-full sm:w-3/4 my-2">{t("About.p2")}</div>
       <PhotoHolder src={biking} caption={t("About.bikingcaption")} className="w-full sm:hidden"/>
       <div className="body lg:body-lg text-warm w-full sm:w-3/4 my-2">{t("About.p3")}</div>
       <PhotoHolder src={bay} caption={t("About.baycaption")} className="w-full sm:hidden"/>

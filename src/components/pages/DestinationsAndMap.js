@@ -216,7 +216,7 @@ const DestinationsAndMap = () => {
                   <a href="https://www.erv-nsa.gov.tw/zh-tw/attractions/detail/39" target="_blank">{t("DestinationsAndMap.glossary.activities.l8")}</a>
                 </div>
                 <div>
-                  <a href="http://www.hualiensugar.com.tw/home.php" target="_blank">{t("DestinationsAndMap.glossary.activities.l9")}</a>
+                  <a href="https://www.taisugar.com.tw/Resting/hualian/CP2.aspx?n=12037" target="_blank">{t("DestinationsAndMap.glossary.activities.l9")}</a>
                 </div>
                 <div>
                   <a href="http://www.farglory-oceanpark.com.tw/index.php?site=1" target="_blank">{t("DestinationsAndMap.glossary.activities.l10")}</a>
@@ -234,7 +234,7 @@ const DestinationsAndMap = () => {
                   <a href="http://www.riverking.com.tw/main.htm" target="_blank">{t("DestinationsAndMap.glossary.activities.l14")}</a>
                 </div>
                 <div>
-                  <a href="http://alexlin0409.pixnet.net/blog/post/155573027-花蓮漁港(吃魚丸,買魚貨,出海賞鯨都好玩)" target="_blank">{t("DestinationsAndMap.glossary.activities.l15")}</a>
+                  <a href="https://www.stay-here.com.tw/hualien-fishing-port/" target="_blank">{t("DestinationsAndMap.glossary.activities.l15")}</a>
                 </div>
 
               </div>
@@ -270,7 +270,7 @@ const DestinationsAndMap = () => {
                   <a href="https://vivawei.tw/haipu-oyster/" target="_blank">{t("DestinationsAndMap.glossary.food.l7")}</a>
                 </div>
                 <div>
-                  <a href="http://www.nicole1173.tw/2011/03/blog-post_9650.html" target="_blank">{t("DestinationsAndMap.glossary.food.l8")}</a>
+                  <a href="https://alina00.com/hualien-bomb-onioncake/" target="_blank">{t("DestinationsAndMap.glossary.food.l8")}</a>
                 </div>
                 <div>
                   <a href="https://yoti.life/hualien-food-532/" target="_blank">{t("DestinationsAndMap.glossary.food.l9")}</a>
@@ -318,10 +318,10 @@ const DestinationsAndMap = () => {
               <div className="grid-link grid grid-cols-2 w-3/4 md:grid-cols-3 sm:grid-cols-4 my-5 row-auto captions gap-y-3  text-grey-darkest">
 
                 <div>
-                  <a href="http://tour-hualien.hl.gov.tw/Portal/?lang=0" target="_blank">{t("DestinationsAndMap.other.related.l1")}</a>
+                  <a href="http://tour-hualien.hl.gov.tw/" target="_blank">{t("DestinationsAndMap.other.related.l1")}</a>
                 </div>
                 <div>
-                  <a href="http://www.railway.gov.tw/tw/" target="_blank">{t("DestinationsAndMap.other.related.l2")}</a>
+                  <a href="https://www.railway.gov.tw/tra-tip-web/tip" target="_blank">{t("DestinationsAndMap.other.related.l2")}</a>
                 </div>
                 <div>
                   <a href="http://www.hulairport.gov.tw/" target="_blank">{t("DestinationsAndMap.other.related.l3")}</a>

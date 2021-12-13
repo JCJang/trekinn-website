@@ -76,7 +76,7 @@ const Navbar = () => {
     <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
   </a>
   {t("Navbar.language")==="en"?
-  <div onClick={()=>{i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}}>
+  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full pt-1 lg:pt-0 lg:pb-1 px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}}>
     <LanguageOutlinedIcon className="pb-1"/>{t("Navbar.changeTo")}
   </div>
   :
