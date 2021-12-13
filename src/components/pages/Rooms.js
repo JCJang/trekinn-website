@@ -74,13 +74,13 @@ const Rooms = ({
     <div>
     {
       Announcements &&
-    <div id="Announcements" className="w-10/12 flex md:w-2/3 lg:w-1/2 p-3 px-5 pr-16 z-40 shadow-md text-accent-red bg-background-beige absolute border-2 border-background-cool right-0 duration-300" style={{top:"4rem", display:!showAnnouncements && "none"}}>
+    <div id="Announcements" className="w-10/12 flex md:w-2/3 lg:w-1/2 p-3 px-5 pr-16 z-30 shadow-md text-accent-red bg-background-beige absolute border-2 border-background-cool right-0 duration-300" style={{top:"4rem", display:!showAnnouncements && "none"}}>
     <div>{Announcements}</div>
     </div>
     }
     {
       Announcements && showAnnouncements &&
-    <div id="AnnouncementsToggler" onClick={()=>{setShowAnnouncements(!showAnnouncements)}} className="p-3 px-4 z-50 hover:text-accent-blue text-accent-red bg-background-beige absolute right-0" style={{top:"4.1rem",right:"0.2rem"}}>
+    <div id="AnnouncementsToggler" onClick={()=>{setShowAnnouncements(!showAnnouncements)}} className="p-3 px-4 z-40 hover:text-accent-blue text-accent-red bg-background-beige absolute right-0" style={{top:"4.1rem",right:"0.2rem"}}>
     <CloseOutlinedIcon/>
     </div>
     }
@@ -298,7 +298,7 @@ const Rooms = ({
 
       <div id="other" className="caption bg-background text-grey-dark flex flex-col-reverse lg:flex-row">
       <div id="overview" className="w-full sm:pl-16 lg:w-1/2 p-6 bg-background-beige">
-          <IntraWebLink title={t("Rooms.packages.title")} verticalTitle={JSON.parse(t("mod.vertical"))} body={t("Rooms.packages.body")} linkText={t("Rooms.packages.linkText")} linkRoute="/destinations"/>
+          <IntraWebLink title={t("Rooms.packages.title")} verticalTitle={JSON.parse(t("mod.vertical"))} body={t("Rooms.packages.body")} linkText={t("Rooms.packages.linkText")} linkRoute="/destinations+map"/>
       </div>
         <div id="overview" className="w-full sm:px-20 lg:px-16 lg:w-1/2 sm:mx-2 sm:pb-10 lg:m-0 p-6">
           <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
