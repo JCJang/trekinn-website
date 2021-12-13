@@ -44,7 +44,12 @@ const DestinationsAndMap = () => {
         <div className="flex flex-col  lg:flex-row">
           <div id="overview" className="w-full flex-col-reverse sm:flex-col lg:w-1/2 p-6 ">
             <h1 className="h3 hidden sm:block my-6 lg:h3-lg text-grey-darkest text-left w-full opacity-50">{t("DestinationsAndMap.h1")}</h1>
-            <h2 className="h2 lg:h2-lg lg:mb-6 text-accent">
+            <h2  className={t("Navbar.language")!=="en"
+            ?
+            "h2 lg:h2-lg lg:mb-6 text-accent tracking-wide"
+            :
+            "h2 lg:h2-lg lg:mb-6 text-accent tracking-widest"
+          }>
               {t("DestinationsAndMap.destinations+traffic.h2")}
             </h2>
             <div className="card lg:card-lg flex flex-row mt-3 shadow-xl" style={{
@@ -68,78 +73,120 @@ const DestinationsAndMap = () => {
               <div className="body sm:body text-grey-darkest">
                   {t("DestinationsAndMap.destinations+traffic.p1")}<span className='text-grey-dark'>               {t("DestinationsAndMap.destinations+traffic.p2")}</span>                 {t("DestinationsAndMap.destinations+traffic.p3")}
               </div>
-              <div className="card lg:card-lg flex flex-row mt-3">
-                <div className="text-right mr-6 text-grey-dark w-1/2">
-
-                  <div>
+              <div className="card grid lg:card-lg flex flex-row mt-3 grid-cols-2 gap-x-6 gap-y-2">
+                <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/SdUnjRRLac62" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l1")}</a>
                   </div>
-                  <div>
+                  <div className="text-left text-grey-darkest">
+                    <div>5.3 {t("units.km")}, 13 {t("units.min")}</div>
+                  </div>
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/ihEASB1PnYs" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l2")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                    <div>4.8 {t("units.km")}, 11 {t("units.min")}</div>
+                    </div>
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/pzg8NiHVVnr" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l3")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>3.4 {t("units.km")}, 8 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/FtBv1AmhT9U2" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l4")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>5.3 {t("units.km")}, 11 {t("units.min")}</div>
+                  </div>
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/AWRmLcdfsaE2" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l5")}</a>
                   </div>
-                  <div>
+
+
+                  <div className="text-left text-grey-darkest">
+                  <div>3.5 {t("units.km")}, 10 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/jiNoTa3kut62" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l6")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>3.5 {t("units.km")}, 10 {t("units.min")}</div>
+                  </div>
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/BFhoyMzW1ft" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l7")}</a>
                   </div>
-                  <div>
+
+
+                  <div className="text-left text-grey-darkest">
+                  <div>21 {t("units.km")}, 35 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/CpQ7zZhycy72" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l8")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>1.9 {t("units.km")}, 5 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/DfGwa2Cx8mP2" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l9")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>9.4 {t("units.km")}, 20 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/3C4VQiMxbFK2" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l10")}</a>
                   </div>
-                  <div>
+
+                  <div className="text-left text-grey-darkest">
+                  <div>14.5 {t("units.km")}, 25 {t("units.min")}</div>
+                  </div>
+
+                  <div className="text-right text-grey-dark">
                     <a href="https://goo.gl/maps/cFaq1jThk4o" target="_blank">
                       {t("DestinationsAndMap.destinations+traffic.l11")}</a>
                   </div>
 
-                </div>
-                <div className="text-left text-grey-darkest">
-                  <div>5.3 {t("units.km")}, 13 {t("units.min")}</div>
-                  <div>4.8 {t("units.km")}, 11 {t("units.min")}</div>
-                  <div>3.4 {t("units.km")}, 8 {t("units.min")}</div>
-                  <div>5.3 {t("units.km")}, 11 {t("units.min")}</div>
-                  <div>3.5 {t("units.km")}, 10 {t("units.min")}</div>
-                  <div>3.5 {t("units.km")}, 10 {t("units.min")}</div>
-                  <div>21 {t("units.km")}, 35 {t("units.min")}</div>
-                  <div>1.9 {t("units.km")}, 5 {t("units.min")}</div>
-                  <div>9.4 {t("units.km")}, 20 {t("units.min")}</div>
-                  <div>14.5 {t("units.km")}, 25 {t("units.min")}</div>
+                  <div className="text-left text-grey-darkest">
                   <div>22.6 {t("units.km")}, 34 {t("units.min")}</div>
+                  </div>
+                </div>
+
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-      </div>
 
       <div id="agreement" className="captions flex flex-col lg:flex-row text-grey-dark sm:px-16 lg:flex-row">
         <div className="w-full lg:w-3/5 p-6">
-          <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
+          <h2  className={t("Navbar.language")!=="en"
+          ?
+          "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-wide"
+          :
+          "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-widest"
+        }
+          >
             {t("DestinationsAndMap.packages.h2")}
           </h2>
           <h3 className="h3 lg:h3-lg text-warm my-5">
@@ -179,7 +226,13 @@ const DestinationsAndMap = () => {
       <div className="captions bg-background-cool text-grey-dark flex flex-col sm:flex-row">
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="region" className="w-full flex flex-col p-6">
-            <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
+            <h2  className={t("Navbar.language")!=="en"
+            ?
+            "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-wide"
+            :
+            "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-widest"
+          }
+            >
             {t("DestinationsAndMap.glossary.h2")}
             </h2>
 
@@ -305,7 +358,13 @@ const DestinationsAndMap = () => {
       <div className="captions bg-background-beige text-warm flex flex-col sm:flex-row">
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="region" className="w-full flex flex-col p-6">
-            <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
+            <h2  className={t("Navbar.language")!=="en"
+            ?
+            "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-wide"
+            :
+            "h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5 tracking-widest"
+          }
+            >
               {t("DestinationsAndMap.other.h2")}
             </h2>
 
@@ -368,8 +427,6 @@ const DestinationsAndMap = () => {
         </div>
       </div>
 
-
-    </div>
     <Footer/>
   </div>)
 }

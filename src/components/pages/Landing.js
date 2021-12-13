@@ -1,3 +1,4 @@
+import ImageFadeIn from './../util/ImageFadeIn'
 import landing from '../../photos/landing.jpg'
 import {Helmet} from "react-helmet";
 import { useTranslation } from 'react-i18next'
@@ -32,22 +33,28 @@ const Landing = () => {
       <NavbarDark/>
       <div className="relative shadow-md justify-center h-screen w-screen">
           <div className="absolute h-screen w-screen gradient darken-layer"></div>
-          <img className="h-screen w-screen object-cover" src={landing}/>
+          <ImageFadeIn className="h-screen w-screen object-cover" src={landing}/>
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
+            {t("Navbar.language")!=="en"?
+            <h1 className="text-background h1 text-center m-8">
+              {t("Landing.h1")}
+            </h1>
+            :
             <h1 className="text-background vertical h1 lg:h1-lg lg:horizontal m-8">
               {t("Landing.h1")}
             </h1>
-            <div className="body text-background max-w-sm text-center tracking-wider mx-12">
+            }
+            <div className={t("Navbar.language")!=="en"?"body lg:body-lg text-background max-w-sm text-center tracking-normal mx-12":"body lg:body-lg text-background max-w-sm text-center tracking-wider mx-12"}>
     {t("Landing.p1")}
             </div>
             <MountainLogo className="h-8 w-full m-6"/>
             <Link to="/rooms" className="action-btn h3 lg:h3-lg text-warm bg-accent-green hover:scale-95 py-4 px-10 hover:shadow hover:bg-accent-blue active:bg-grey-dark hover:text-accent duration-75">{t("Landing.actionButton")}</Link>
-            <div className="caption lg:caption-lg semibold m-3 text-background">{t("Landing.readMore")}<ExpandMoreOutlinedIcon/></div>
+            <div className="caption lg:caption-lg opacity-75 semibold m-3 text-background">{t("Landing.readMore")}<ExpandMoreOutlinedIcon/></div>
           </div>
 
     </div>
 
-  <div className="flex flex-col sm:flex-row py-4">
+  <div className="flex flex-col lg:flex-row py-4">
   <LandingLink verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Landing.link-about.title")} body={t("Landing.link-about.body")} linkText={t("Landing.link-about.linkText")} linkRoute="/about"/>
   <div className="border-rooms-warm"></div>
   <LandingLink verticalTitle={JSON.parse(t("mod.vertical"))} title={t("Landing.link-rooms.title")} body={t("Landing.link-rooms.body")} linkText={t("Landing.link-rooms.linkText")} linkRoute="/rooms"/>

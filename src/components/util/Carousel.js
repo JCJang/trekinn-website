@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import {useState} from 'react'
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 
 const Carousel = ({verticalTitle=true, title="", body="", linkText="", linkRoute="", imgSources=[], caption="", alt=title, prices=[0,0]}) => {
-
-
+  const {t, i18n} = useTranslation();
   const [selectedImage,setSelectedImage] = useState(0)
 
   return (
@@ -17,9 +17,7 @@ const Carousel = ({verticalTitle=true, title="", body="", linkText="", linkRoute
     }
     <div className="flex flex-col w-full">
       {verticalTitle === false &&
-        <div className="h2 lg:h2-lg fit-content tracking-tighter opacity-75" style={{
-          margin: "2rem 0"
-        }}>{title}</div>
+        <div className="h2 mb-6 lg:h2-lg fit-content tracking-tighter opacity-75" >{title}</div>
       }
       <div className="max-w-full w-full flex h-full flex-col bg-background-beige">
       <img src={imgSources[selectedImage]} alt={alt} className="z-10 place-center flex-grow max-h-full h-64 object-contain shadow" style={{borderRadius:"3px"}}/>
@@ -42,12 +40,18 @@ const Carousel = ({verticalTitle=true, title="", body="", linkText="", linkRoute
 <div>
     <div className="flex flex-col-reverse sm:flex-row px-6 pt-4 lg:pt-6">
     <div className="flex-grow w-full lg:w-auto">
-    <div className="h3 lg:h3-lg text-accent text-left">假日 <span className="text-accent-blue">//</span> {prices[0]} <span className="opacity-50 text-xl"> TWD</span></div>
-<div className="h3 lg:h3-lg text-accent text-left">
-平日 <span className="text-accent-blue">//</span > {
+    <div className={t("Navbar.language")!=="en"?"card lg:card-lg text-accent text-left":"h3 lg:h3-lg text-accent text-left"}>
+    {t("Rooms.help.peak")} <span className="h3 lg:h3-lg text-accent text-left"> <span className="text-accent-blue ">//</span > {
+    prices[0]
+    }
+    <span className="opacity-50 text-xl"> TWD</span>
+    </span> < /div>
+<div className={t("Navbar.language")!=="en"?"card mt-2 lg:card-lg text-accent text-left":"h3 lg:h3-lg text-accent text-left"}>
+{t("Rooms.help.offpeak")} <span className="h3 lg:h3-lg text-accent text-left"> <span className="text-accent-blue ">//</span > {
 prices[1]
 }
-<span className="opacity-50 text-xl"> TWD</span> < /div>
+<span className="opacity-50 text-xl"> TWD</span>
+</span> < /div>
 </div>
 <div className="captions lg:captions-lg pt-3 pb-2 md:p-0 text-grey-darkest text-left sm:text-right w-full lg:w-5/12">
 {caption}

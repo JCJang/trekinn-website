@@ -2,7 +2,7 @@
   "Navbar":{
     "trekinn":"Trekinn",
     "about":"About",
-    "destinations+map":"Destinations + Map",
+    "destinations+map":"Travel guide",
     "rooms":"Rooms",
     "contact":"Contact",
     "home":"Back to Home",
@@ -35,21 +35,21 @@
     "destinations+traffic":{
       "mapcaptions":"Trekinn - No. 179, Zhongxing Rd, Hualien City, Hualien County, 970",
       "mapbutton":"Open Google Maps for navigation",
-      "h2":"Travel Times to popular Hualien Destinations",
+      "h2":"Travel Times to Points of Interest",
       "p1":"Please refer to the following ",
       "p2":"points of interest.",
-      "p3":" You may click on them to see the detailed route from Trekinn:",
-      "l1":"Hualien Train Station:",
-      "l2":"Hualien Airport:",
-      "l3":"Whale Watching Wharf:",
-      "l4":"Qixingtan Beach:",
-      "l5":"Downtown Starbucks:",
-      "l6":"Eastern Gate Night Market:",
-      "l7":"Liyu Lake:",
-      "l8":"Pine Garden at May Ring Hill:",
-      "l9":"Japanese Monastery:",
-      "l10":"Ocean Park:",
-      "l11":"Taroko Gorge National Park:"
+      "p3":" You may click on them to see the detailed route from Trekinn",
+      "l1":"Hualien Train Station",
+      "l2":"Hualien Airport",
+      "l3":"Whale Watching Wharf",
+      "l4":"Qixingtan Beach",
+      "l5":"Downtown Starbucks",
+      "l6":"Eastern Gate Night Market",
+      "l7":"Liyu Lake",
+      "l8":"Pine Garden at May Ring Hill",
+      "l9":"Japanese Monastery",
+      "l10":"Ocean Park",
+      "l11":"Taroko Gorge National Park"
     },
     "packages":{
       "h2":"Transportation Services and Package Tours",
@@ -125,10 +125,10 @@
   }
   },
   "Landing":{
-    "h1":"Trekinn",
+    "h1":"Trekinn Homestay",
     "p1":"No matter where you choose to travel in Hualien - one of the best natural getaways in Taiwan - Trekinn is the perfect accomodation for your comfort and convenience.",
-    "actionButton":"Book Now",
-    "readMore": "read more below",
+    "actionButton":"book now",
+    "readMore": "learn more below",
     "link-about": {
       "title": "About",
       "body": "Trekinn is a quality legal homestay registered with Hualien city, and has been awarded Huanlien County government's Award for sanitation excellence. The small inn has been operating since 2006, and offers a quiet and comfortable stay for price-conscious travelers.",
@@ -140,9 +140,9 @@
       "linkText": "Rooms"
     },
     "link-destinations": {
-      "title": "Transportation and Travel Guide",
+      "title": "Travel Guide",
       "body": "Hualien is quite suitable for individual travel if you have the right information. We can help you plan your trip and book a variety of services and activities, include rafting, river trekking, whale watching, car rentals, and package tours. We also offer discounted tickets for Farglory Ocean Park, Harvest Ranch Resort.",
-      "linkText": "Transportation and Travel Guide"
+      "linkText": "Transportation & Travel Guide"
     }
   },
   "Rooms":{
@@ -156,17 +156,17 @@
       "caption":"30 square meters, two queen beds, extra bed available upon request."
     },
     "help":{
-      "peak":"Generally, Peak days",
+      "peak":"Peak days",
       "peakConditions":"are Friday, Saturday, consecutive holidays, and certain periods of spring break and summer break.",
       "offpeak":"Off-peak days",
       "offpeakConditions":" are Sunday through Thursday. Rates may be even lower per current promotions. Please request rates for selected days by phone call or email."
     },
     "time+amenities":{
       "checkin":"Check-in",
-      "checkinTime":"3PM and after",
+      "checkinTime":"after 3PM",
       "checkout":"Check-out",
       "checkoutTime":"before 12PM",
-      "p1":"ID or passport is required for identification according to government regulations. Early Check-in is by request only and not guaranteed.",
+      "p1":"ID or passport is required for identification per government regulations. Early Check-in is by request only and not guaranteed.",
       "amenities":{
         "h3":"Amenities",
         "l1":"Mitsubishi air conditioning",
@@ -178,7 +178,7 @@
         "l7":"Massage shower",
         "l8":"Hairdryer",
         "l9":"Quality mattresses with anti-mite bedding",
-        "l10":"Electric fast-boil tea kettle and free tea and coffee packs"
+        "l10":"Electric tea kettle and free tea and coffee packs"
       }
     },
     "reservation+payment":{
@@ -193,10 +193,10 @@
       "regional":{
         "h3":"Regional deposit method (Taiwan) ",
         "p1":"If you are booking from Taiwan, please wire-transfer the room deposit into the following post account within two days of your request; otherwise, we will cancel the expired request.",
-        "bankNumberCaption":"Deposit Account:",
-        "bankNumberValue":"Taiwan Post (Bank Code: 700)",
-        "accountNumberCaption":"Account Number:",
-        "accountNameCaption":"Account Name:",
+        "bankNumberCaption":"Bank",
+        "bankNumberValue":"Taiwan Post (Code: 700)",
+        "accountNumberCaption":"Account No.",
+        "accountNameCaption":"Account Name",
         "accountNameValue":"林億(Lin-Yi)"
       },
       "nonRegional":{
@@ -215,7 +215,7 @@
         "p1":"Check-in days and room types are changeable. Accordingly, deposit would be deducted or made up in two days."
       },
       "exceptions":{
-        "h3":"Cancellation due to Casual Events)",
+        "h3":"Cancellation due to Casual Events",
         "p1":"Due to the casual event like typhoon, earthquake, or those not caused by the guest, arrival is impossible to achieve, and all the deposit would be returned in 7 days."
       }
 
@@ -223,10 +223,10 @@
     "packages":{
       "title":"Trip-planning services",
       "body":"Hualien is quite suitable for individual travel if you have the right information. We can help you plan your trip and book a variety of services and activities, include rafting, river trekking, whale watching, car rentals, and package tours. We also offer discounted tickets for Farglory Ocean Park, Harvest Ranch Resort.",
-      "linkText":"Transportation and Travel Guide"
+      "linkText":"See our Travel Guide"
     },
     "other":{
-      "h2":"Renting the Whole Place or Planning Month-long stays",
+      "h2":"Additional Stay Options",
       "allRooms":{
         "h3":"Rent the Whole Place",
         "p1":"Trekinn has a total of Five Rooms. Available at 7000 NT and up. Inquire at 0983-661588."
@@ -239,7 +239,7 @@
 
   },
   "Footer":{
-    "address-1":"Trekinn No. 179, Zhongxing Rd",
+    "address-1":"Trekinn No. 179, Zhongxing Rd, ",
     "address-2":"Hualien City, Hualien County, 970",
     "license":"Hualien County legal homestay license number 282",
     "callPrompt":"Tap to call",

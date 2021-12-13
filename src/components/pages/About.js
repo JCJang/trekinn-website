@@ -17,6 +17,7 @@ import bay from '../../photos/about/bay.jpg'
 
 const About = () => {
   const {t, i18n} = useTranslation();
+  console.log(t("Navbar.language"))
   return (
     <div className="bg-background-beige w-screen h-screen overflow-y-scroll overflow-x-hidden">
     <Helmet>
@@ -39,7 +40,12 @@ const About = () => {
       <div className="flex bg-background flex-col flex-grow p-6 sm:p-10 sm:pt-24 w-2/3 items-center text-left py-8">
         <PhotoHolder src={lobby} caption={t("About.lobbycaption")} className="sm:hidden w-full sm:w-3/4"/>
       <h1 className="h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 hidden sm:block  opacity-50">{t("About.h1")}</h1>
-      <h2 className="h2 lg:h2-lg text-warm w-full sm:w-3/4 py-4">
+      <h2 className={t("Navbar.language")!=="en"
+      ?
+      "h2 lg:h2-lg text-warm w-full sm:w-3/4 py-4 tracking-wide"
+      :
+      "h2 lg:h2-lg text-warm w-full sm:w-3/4 py-4 tracking-widest"
+      }>
       <div>{t("About.h2-1")}<br></br>{t("About.h2-2")}</div></h2>
       <div className="body lg:body-lg text-warm w-full sm:w-3/4 my-2">{t("About.p1")}</div>
       <PhotoHolder src={exterior} caption={t("About.exteriorcaption")} className="w-full sm:hidden"/>

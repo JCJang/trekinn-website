@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~@fontsource/roboto";
+
 
 body {
   font-size: 16px;
-  @apply font-light text-base leading-8;
-  font-family: "Genseki", sans-serif;
+  @apply text-base leading-8;
+  font-family: "Roboto", "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 @layer utilities {
@@ -24,7 +21,7 @@ code {
 }
 
 .h2-lg{
-  @apply tracking-widest text-4xl font-semibold;
+  @apply text-4xl font-semibold;
   font-family: "Genwan";
 }
 
@@ -36,21 +33,21 @@ code {
 .captions-lg{
   @apply tracking-wide font-medium;
   font-size: 0.9rem;
-  font-family: "Genwan";
+  font-family: "Roboto", "Genwan";
 }
 
 .body-lg{
-  @apply font-light text-base leading-8;
+  @apply font-normal text-base leading-8;
   font-size: 1rem;
-  font-family: "Genseki";
+  font-family: "Roboto", "Genseki";
   opacity: 0.85;
 
 }
 
 .body2-lg{
-  @apply font-light text-base leading-8;
+  @apply font-normal text-base leading-8;
   font-size: 0.8rem;
-  font-family: "Genseki";
+  font-family: "Roboto", "Genseki";
   opacity: 0.85;
 }
 
@@ -67,7 +64,7 @@ code {
 }
 
 .h2{
-  @apply text-2xl tracking-widest font-semibold;
+  @apply text-2xl font-semibold;
   font-family: "Genwan";
 }
 
@@ -77,21 +74,21 @@ code {
 }
 
 .captions{
-  @apply tracking-wide font-medium leading-6;
+  @apply tracking-wide font-medium leading-5;
   font-size: 0.9rem;
-  font-family: "Genwan";
+  font-family: "Roboto", "Genwan";
 }
 
 .body{
-  @apply font-light text-base leading-7;
-  font-family: "Genseki";
+  @apply font-normal text-base leading-7;
+  font-family: "Roboto", "Genseki";
 
 }
 
 .body2{
-  @apply font-light text-base leading-8;
+  @apply font-normal text-base leading-8;
   font-size: 0.8rem;
-  font-family: "Genseki";
+  font-family: "Roboto", "Genseki";
 }
 
 .card{

@@ -92,7 +92,7 @@ const Rooms = ({
         <div className="flex sm:px-16 flex-col lg:flex-row w-full">
           <div id="times" className="w-full lg:w-4/12 p-6 flex flex-col">
             <div className="flex flex-row w-full">
-              <div className="w-1/2">
+              <div className="w-1/2 pr-6">
                 <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5 mr-6">
                   {t("Rooms.time+amenities.checkin")}
                 </h3>
