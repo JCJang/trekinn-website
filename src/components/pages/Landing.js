@@ -1,4 +1,6 @@
 import ImageFadeIn from './../util/ImageFadeIn'
+import landingLg from '../../photos/landing-lg.jpg'
+import landingMd from '../../photos/landing-md.jpg'
 import landing from '../../photos/landing.jpg'
 import {Helmet} from "react-helmet";
 import { useTranslation } from 'react-i18next'
@@ -33,7 +35,11 @@ const Landing = () => {
       <NavbarDark/>
       <div className="relative shadow-md justify-center h-screen w-screen">
           <div className="absolute h-screen w-screen gradient darken-layer"></div>
-          <ImageFadeIn className="h-screen w-screen object-cover" src={landing}/>
+              <picture>
+          <source className="h-screen w-screen object-cover" media="(min-width:1024px)" srcset={landingLg}></source>
+          <source className="h-screen w-screen object-cover" media="(min-width:768px)" srcset={landingMd}></source>
+          <ImageFadeIn className="h-screen w-screen object-cover" src={landing} alt="Scenic View of Taroko Gorge"/>
+          </picture>
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
             {t("Navbar.language")!=="en"?
             <h1 className="text-background h1 text-center m-8">
