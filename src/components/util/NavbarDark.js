@@ -36,11 +36,11 @@ const NavbarDark = () => {
     left:navOpen?"0px":"-16rem"
   }}>
 
-  <div className="hidden lg:block lg:mt-1 pl-64 font-semibold genwan text-center">
+  <div className="hidden lg:block lg:mt-1 pl-64 font-medium genwan text-center">
     <NavLinkDark linkText={t("Navbar.trekinn")} linkRoute="/"/>
     </div>
 
-    <div className="lg:hidden font-semibold text-base genwan mt-3 text-center">
+    <div className="lg:hidden font-medium text-base genwan mt-3 text-center">
     <Link to="/">{t("Navbar.trekinn")}</Link>
     </div>
 
@@ -77,16 +77,16 @@ const NavbarDark = () => {
 
   </div>
 <div className="flex flex-col lg:flex-row">
-  <a href="tel:+886983661588" className="font-semibold shadow font-base genwan text-center rounded-full px-4 mx-6 lg:mr-0 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
+  <a href="tel:+886983661588" className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 lg:mr-0 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
     <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
   </a>
   {t("Navbar.language")==="en"?
-  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-semibold shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
+  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
     <LanguageOutlinedIcon className="pb-1"/>{t("Navbar.changeTo")}
   </div>
   :
   <>
-      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-semibold shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
         <LanguageOutlinedIcon className="pb-1"/>
         中文版
         <ExpandMoreOutlinedIcon className="pb-1"/>

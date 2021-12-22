@@ -45,7 +45,7 @@ const Landing = () => {
           </picture>
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
             {t("Navbar.language")!=="en"?
-            <h1 className="text-background h1 text-center m-8">
+            <h1 className="text-background h1 lg:h1-lg text-center m-8">
               {t("Landing.h1")}
             </h1>
             :

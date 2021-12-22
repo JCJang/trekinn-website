@@ -19,18 +19,8 @@
 
 @font-face {
     font-family: "Genwan";
-    src: local('Genwan'),local('GenWanMin'),local('GenWanMinTW'),url("./fonts/Genwan/GenWanMinTW-SB-01.woff2") format('woff2'),
-    url("./fonts/Genwan/GenWanMinTW-SB-01.woff") format('woff');
-    font-weight: 600;
+    src: local('Genwan'),local('GenWanMin'),local('GenWanMinTW'),url("./fonts/Genwan/GenWanMinTW-M-01.woff2") format('woff2'),
+    url("./fonts/Genwan/GenWanMinTW-M-01.woff") format('woff');
+    font-weight: 500;
     font-display: swap;
-}
-
-
-.genwan{
-  font-family: "Genwan";
-}
-
-
-.genseki{
-  font-family: "Genseki";
 }

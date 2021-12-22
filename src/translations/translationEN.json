@@ -183,7 +183,7 @@
     },
     "reservation+payment":{
       "h2":"Booking and Payment",
-      "p1":"Reservation can be made by the following phone call or Email. Prepayment is 50 percent of the room rate.",
+      "p1":"Reservation can be made via phone call or Email. A 50% room rate deposit is required to confirm the booking.",
       "reservation":{
         "number":"Phone:",
         "dayNumber":"Phone (daytime):",
@@ -208,15 +208,15 @@
       "h2":"Booking notice",
       "cancellation":{
         "h3":"Cancellation",
-        "p1":"Reservation can be cancelled 7 days prior to the arrival and 10 percent of the room payment is charged for proceeding; 50 percent is charged in 7 days. The deposit can be kept as deduction for future reservation in 6 months."
+        "p1":"Reservation cancellations made more than 7 days in advance to your check-in date will be charged a 10 percent processing fee; cancellations made less than 7 days prior to check-in will be charged a 50 percent fee. Your deposit can be applied towards a future reservation within the next 6 months."
       },
       "changes":{
         "h3":"Reservation Changes",
-        "p1":"Check-in days and room types are changeable. Accordingly, deposit would be deducted or made up in two days."
+        "p1":"Check-in days and room types are changeable. Accordingly, the difference in deposit will be returned or should be made up in two days."
       },
       "exceptions":{
         "h3":"Cancellation due to Casual Events",
-        "p1":"Due to the casual event like typhoon, earthquake, or those not caused by the guest, arrival is impossible to achieve, and all the deposit would be returned in 7 days."
+        "p1":"In case of casual events (such as a typhoon or earthquake) that make your arrival impossible to achieve, all of your deposit will be fully refunded within 7 days."
       }
 
     },

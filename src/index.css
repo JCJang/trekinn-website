@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 @import "~@fontsource/roboto";
+@import "~@fontsource/rufina";
 
 
 body {
-  font-size: 16px;
+  font-size: 17px;
   @apply text-base leading-8;
   font-family: "Roboto", "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,29 +17,29 @@ body {
 @layer utilities {
   @variants responsive {
 .h1-lg{
-  @apply text-6xl tracking-wider font-semibold;
-  font-family: "Genwan";
+  @apply text-6xl tracking-wider font-medium;
+  font-family: "Rufina","Genwan";
 }
 
 .h2-lg{
-  @apply text-4xl font-semibold;
-  font-family: "Genwan";
+  @apply text-4xl font-medium;
+  font-family: "Rufina","Genwan";
 }
 
 .h3-lg{
-  @apply text-2xl tracking-wide font-semibold leading-7;
-  font-family: "Genwan";
+  @apply text-2xl tracking-wide font-medium leading-7;
+  font-family: "Rufina","Genwan";
 }
 
 .captions-lg{
   @apply tracking-wide font-normal;
   font-size: 0.9rem;
-  font-family: "Roboto", "Genwan";
+  font-family: "Rufina", "Genwan";
 }
 
 .body-lg{
   @apply font-normal text-base leading-8;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Roboto", "Genseki";
   opacity: 0.85;
 
@@ -51,36 +52,37 @@ body {
   opacity: 0.85;
 }
 
+
 .card-lg{
-  @apply font-semibold leading-7;
+  @apply font-medium leading-7;
   font-size: 1rem;
-  font-family: "Genwan";
+  font-family: "Rufina","Genwan";
 }
 
 
 .h1{
-  @apply text-4xl tracking-wider font-semibold;
-  font-family: "Genwan";
+  @apply text-4xl tracking-wider font-medium;
+  font-family: "Rufina","Genwan";
 }
 
 .h2{
-  @apply text-2xl font-semibold;
-  font-family: "Genwan";
+  @apply text-2xl font-medium;
+  font-family: "Rufina","Genwan";
 }
 
 .h3{
-  @apply text-xl tracking-wide font-semibold leading-5;
-  font-family: "Genwan";
+  @apply text-xl tracking-wide font-medium leading-5;
+  font-family: "Rufina","Genwan";
 }
 
 .captions{
   @apply tracking-wide font-normal leading-5;
   font-size: 0.9rem;
-  font-family: "Roboto", "Genwan";
+  font-family: "Rufina", "Genwan";
 }
 
 .body{
-  @apply font-normal text-base leading-7;
+  @apply font-normal leading-7;
   font-family: "Roboto", "Genseki";
 
 }
@@ -92,9 +94,9 @@ body {
 }
 
 .card{
-  @apply font-semibold leading-7;
+  @apply font-medium leading-7;
   font-size: 0.9rem;
-  font-family: "Genwan";
+  font-family: "Rufina","Genwan";
 }
 
 .vertical{
@@ -157,6 +159,16 @@ body {
   animation: pulse 3s infinite;
 }
 
+.NavLinkDark:hover{
+  color:#83C4D2;
+  transform: scale(1.05);
+  transition-duration: 0.2s;
+}
+.NavLink:hover{
+  color:#D8E5E3;
+  transform: scale(1.05);
+  transition-duration: 0.2s;
+}
 .action-btn:hover{
  animation-play-state: paused;
 }
@@ -181,9 +193,18 @@ body {
   border-radius: 7px;
   width:100%;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   height:fit-content;
   box-sizing: border-box;
+  transition-duration: 0.2s;
+}
+
+.link-btn:hover{
+  background: #A7C9AF;
+  border: 1px solid #C4C4C4;
+  box-shadow: none;
+  transform: scale(1.05);
+
 }
 
 .map-btn{
@@ -200,7 +221,7 @@ body {
 
 .glass{
   /* From https://css.glass */
-background: rgba(164,164,164, 0.6);
+background: rgba(189,180,176, 0.75);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 backdrop-filter: blur(2.5px);
 -webkit-backdrop-filter: blur(2.5px);
@@ -273,4 +294,13 @@ backdrop-filter: blur(2.5px);
 
 .grid-link > div {
   cursor: pointer;
+}
+
+.genwan{
+  font-family: "Genwan";
+}
+
+
+.genseki{
+  font-family: "Genseki";
 }
