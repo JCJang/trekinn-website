@@ -148,11 +148,11 @@
   "Rooms":{
     "h1":"Rooms",
     "twoBedroom":{
-      "title":"One-King-Bed Room",
+      "title":"Standard Suite",
       "caption":"20~26 square meters, one king bed, extra bed available upon request."
     },
     "fourBedroom":{
-      "title":"Two-Queen-Beds Room",
+      "title":"Family Suite",
       "caption":"30 square meters, two queen beds, extra bed available upon request."
     },
     "help":{

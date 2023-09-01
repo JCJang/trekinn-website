@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://use.typekit.net/wom3xpa.css");
 @import "~@fontsource/lora";
+@import "~@fontsource/roboto";
 
 
 body {
   font-size: 17px;
   @apply text-base leading-8;
   font-weight:300;
-  font-family: "canada-type-gibson", "Genseki", sans-serif;
+  font-family: "Roboto", "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,7 +42,7 @@ body {
   @apply font-normal text-base leading-8;
   font-size: 1.2rem;
   font-weight:300;
-  font-family: "canada-type-gibson", "Genseki";
+  font-family: "Roboto", "Genseki";
   opacity: 0.85;
 
 }
@@ -51,7 +51,7 @@ body {
   @apply font-normal text-base leading-8;
   font-size: 0.8rem;
   font-weight:300;
-  font-family: "canada-type-gibson", "Genseki";
+  font-family: "Roboto", "Genseki";
   opacity: 0.85;
 }
 
@@ -87,7 +87,7 @@ body {
 .body{
   @apply font-normal leading-7;
   font-weight:300;
-  font-family: "canada-type-gibson", "Genseki";
+  font-family: "Roboto", "Genseki";
 
 }
 
@@ -95,7 +95,7 @@ body {
   @apply font-normal text-base leading-8;
   font-size: 0.8rem;
   font-weight:300;
-  font-family: "canada-type-gibson", "Genseki";
+  font-family: "Roboto", "Genseki";
 }
 
 .card{
