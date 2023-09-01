@@ -117,7 +117,7 @@ const Rooms = ({
           <div id="times" className="w-full lg:w-4/12 p-6 flex flex-col">
             <div className="flex flex-row w-full">
               <div className="w-1/2 pr-6">
-                <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5 mr-6">
+                <h3 className="h3 lg:h3-lg text-warm my-2 sm:my-5 mr-6">
                   {t("Rooms.time+amenities.checkin")}
                 </h3>
                 <div className="genseki text-lg font-normal opacity-75 text-grey-dark">
@@ -125,7 +125,7 @@ const Rooms = ({
                 </div>
               </div>
               <div className="w-1/2">
-                <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5">
+                <h3 className="h3 lg:h3-lg text-warm my-2 sm:my-5">
                   {t("Rooms.time+amenities.checkout")}
                 </h3>
                 <div className="genseki text-lg font-normal opacity-75 text-grey-dark">
@@ -141,12 +141,12 @@ const Rooms = ({
 
           <div className="border-rooms-cool"></div>
           <div id="region" className="w-full flex flex-col lg:w-8/12 p-6">
-            <div className="flex flex-row">
+            <div className="flex flex-col sm:flex-row">
               <h3 className="h3 lg:h3-lg text-warm mt-2 mb-5 sm:my-5 mr-3 w-1/4">
                 {t("Rooms.time+amenities.amenities.h3")}
               </h3>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 my-5 row-auto captions gap-4 text-grey-darkest">
+              <div className="grid grid-cols-2 sm:grid-cols-3 sm:my-5 row-auto captions gap-4 text-grey-darkest">
                 <div className="flex content-center">
                   <ChaletOutlinedIcon className="text-accent-blue mb-1 mr-2 text-accent-blue"/>
                   <div>{t("Rooms.time+amenities.amenities.l1")}</div>

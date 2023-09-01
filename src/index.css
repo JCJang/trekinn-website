@@ -223,10 +223,10 @@ body {
 
 .glass{
   /* From https://css.glass */
-background: rgba(255,255,255, 0.25);
+background: rgba(255,255,255, 0.4);
 box-shadow: 0 2px 2px rgba(155, 155, 155, 0.1);
-backdrop-filter: blur(2.5px);
--webkit-backdrop-filter: blur(2.5px);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
 }
 
 
@@ -234,8 +234,8 @@ backdrop-filter: blur(2.5px);
   /* From https://css.glass */
 background:  rgba(62, 79, 84, 0.4);
 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-backdrop-filter: blur(2.5px);
--webkit-backdrop-filter: blur(2.5px);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
 }
 
 .border-landing-light{
