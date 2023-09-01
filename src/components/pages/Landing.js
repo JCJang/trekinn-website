@@ -37,15 +37,18 @@ const Landing = () => {
   </Helmet>
       <NavbarDark/>
       <div className="relative shadow-md justify-center h-screen w-screen bg-grey-darkest">
-          <div className="absolute h-screen w-screen gradient darken-layer"></div>
               <picture>
-          <source className="h-screen w-screen object-cover" media="(min-width:1024px)" srcset={landingLgWebP, landingLg}></source>
-          <source className="h-screen w-screen object-cover" media="(min-width:768px)" srcset={landingMdWebP, landingMd}></source>
-          <ImageFadeIn className="h-screen w-screen object-cover" src={landingWebP, landing} alt="Scenic View of Taroko Gorge"/>
+          <source className="absolute left-0 top-0 -z-10 h-screen w-screen object-cover" media="(min-width:1024px)" srcset={landingLgWebP, landingLg}></source>
+          <source className="absolute left-0 top-0 -z-10 h-screen w-screen object-cover" media="(min-width:768px)" srcset={landingMdWebP, landingMd}></source>
+          <ImageFadeIn className="absolute left-0 top-0 -z-10 h-screen w-screen object-cover" src={landingWebP, landing} alt="Scenic View of Taroko Gorge"/>
           </picture>
+          <div className="absolute h-screen w-screen gradient darken-layer"></div>
+
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
             {t("Navbar.language")!=="en"?
-            <h1 className="text-background h1 lg:h1-lg text-center m-2">
+            <h1 className="text-background h1 lg:h1-lg text-center m-6" style={{
+              maxWidth: "8ch"
+            }}>
               {t("Landing.h1")}
             </h1>
             :
@@ -58,7 +61,7 @@ const Landing = () => {
             </div>
             <MountainLogo className="h-8 w-full m-6"/>
             <Link to="/rooms" className="action-btn h3 lg:h3-lg text-warm bg-accent-green hover:scale-95 py-4 px-10 hover:shadow hover:bg-accent-blue active:bg-grey-dark hover:text-accent duration-75">{t("Landing.actionButton")}</Link>
-            <div className="caption lg:caption-lg opacity-75 semibold m-3 text-background">{t("Landing.readMore")}<ExpandMoreOutlinedIcon/></div>
+            <div className="caption lg:caption-lg opacity-75 font-semibold m-3 text-background">{t("Landing.readMore")}<ExpandMoreOutlinedIcon/></div>
           </div>
 
     </div>

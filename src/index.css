@@ -317,12 +317,29 @@ backdrop-filter: blur(3px);
   line-height:1.2 !important;
 }
 
-[lang="en"] h1, [lang="en"] h2, [lang="en"] h3 {
+
+[lang="en"] h1 {
   letter-spacing: -0.002em !important;
-  line-height:1.3 !important;
+  line-height:0.9 !important;
 }
 
+[lang="en"] h2, [lang="en"] h3 {
+  letter-spacing: -0.002em !important;
+  line-height:1.1 !important;
+}
 
+@media screen and (max-width:640px){
+  [lang="en"] .h2 {
+    @apply text-3xl ;
+  }
+}
+
+@media screen and (max-width:640px){
+  [lang="en"] .h1 {
+    @apply text-6xl ;
+  }
+}
+ 
 [lang="en"] .link-btn, [lang="en"] .map-btn {
   font-size: 1.4rem;
   font-weight:500;

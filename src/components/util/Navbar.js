@@ -77,7 +77,7 @@ const Navbar = () => {
 
 
   </div>
-<div className="flex flex-col lg:flex-row">
+<div className="flex flex-col gap-1 lg:flex-row">
   <a href="tel:+886983661588" className="font-medium shadow font-base genwan text-center rounded-full flex items-center py-2 px-4 mx-6 lg:mr-0 gap-1 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
     <div class="flex items-center mx-auto">
     <PhoneInTalkOutlinedIcon className=""/>{t("Navbar.callus")}
@@ -91,13 +91,15 @@ const Navbar = () => {
   </div>
   :
   <>
-      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 lg:my-0 lg:ml-2 pt-0.5 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
-        <LanguageOutlinedIcon className="pb-1"/>
+      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-medium shadow font-base genwan flex items-center gap-1 text-center rounded-full py-2 lg:py-0 px-4 mx-6 lg:my-0 lg:ml-2 lg:pt-0.5 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <div class="mx-auto">
+        <LanguageOutlinedIcon className="lg:pb-1"/>
         中文版
-        <ExpandMoreOutlinedIcon className="pb-1"/>
+        <ExpandMoreOutlinedIcon className="lg:pb-1"/>
+        </div>
       </button>
-      <div className="bg-background lg:origin-top-right absolute origin-bottom bottom-2 lg:bottom-auto mb-16 lg:mb-0 mr-12 lg:right-0 lg:mt-10 w-56 rounded-md shadow-lg bg-transparent focus:outline-none" style={{display:!languageDropdownOpen && "none"}} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-      <div className="py-1" role="none">
+      <div className="bg-background lg:origin-top-right absolute origin-bottom bottom-2 lg:bottom-auto mb-16 lg:mb-0 mr-12 lg:right-0 lg:mt-9 w-56 rounded-md shadow-lg bg-transparent focus:outline-none" style={{display:!languageDropdownOpen && "none"}} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <div className="" role="none">
           <div className="text-center py-2 text-accent hover:bg-accent-blue hover:shadow-none" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhtw")}}>繁體</div>
           <div className="text-center py-2 text-accent hover:bg-accent-blue hover:shadow-none" style={{cursor:"pointer"}} onClick={()=>{i18n.changeLanguage("zhcn")}}>简体</div>
       </div>
