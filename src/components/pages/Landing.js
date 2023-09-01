@@ -36,7 +36,7 @@ const Landing = () => {
   <meta name="distribution" content="global"></meta>
   </Helmet>
       <NavbarDark/>
-      <div className="relative shadow-md justify-center h-screen w-screen">
+      <div className="relative shadow-md justify-center h-screen w-screen bg-grey-darkest">
           <div className="absolute h-screen w-screen gradient darken-layer"></div>
               <picture>
           <source className="h-screen w-screen object-cover" media="(min-width:1024px)" srcset={landingLgWebP, landingLg}></source>
@@ -53,7 +53,7 @@ const Landing = () => {
               {t("Landing.h1")}
             </h1>
             }
-            <div className={t("Navbar.language")!=="en"?"body lg:body-lg text-background max-w-sm text-center tracking-normal mx-12":"body lg:body-lg text-background max-w-sm text-center tracking-wider mx-12"}>
+            <div className={t("Navbar.language")!=="en"?"body lg:body-lg text-background max-w-sm text-center tracking-normal mx-12 font-medium":"body lg:body-lg text-background max-w-sm text-center tracking-wider mx-12 font-medium"}>
     {t("Landing.p1")}
             </div>
             <MountainLogo className="h-8 w-full m-6"/>

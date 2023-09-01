@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,8 +31,16 @@ import "./fonts/Genwan/GenWanMinTW-R-01.woff"
 import "./fonts/Genwan/GenWanMinTW-SB-01.woff"
 import "./fonts/Genwan/GenWanMinTW-R-01.woff2"
 import "./fonts/Genwan/GenWanMinTW-SB-01.woff2"
+import { useTranslation } from 'react-i18next'; // Assuming you are using react-i18next
 
 function App() {
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
   return (
     <Router>
     <Routes>

@@ -52,9 +52,8 @@ const DestinationsAndMap = () => {
           }>
               {t("DestinationsAndMap.destinations+traffic.h2")}
             </h2>
-            <div className="card lg:card-lg flex flex-row mt-3 shadow-xl" style={{
-                borderRadius: "7px",
-                border: "1.5px solid #c4c4c4",
+            <div className="card lg:card-lg flex flex-row mt-3 shadow-sm" style={{
+                borderRadius: "2px",
                 height: "22rem"
               }}>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12260.32208819209!2d121.62286412301299!3d23.995227456828072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689e2baebff605%3A0x92d1b4b981f0171c!2zOTcw6Iqx6JOu57ij6Iqx6JOu5biC5Lit6IiI6LevMTc56Jmf!5e0!3m2!1szh-TW!2stw!4v1462847137894" width="100%" height="100%" frameborder="0" style={{

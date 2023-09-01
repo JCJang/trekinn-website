@@ -2,106 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~@fontsource/lora";
-@import "~@fontsource/roboto";
+/* @import "~@fontsource */
+/* @import "~@fontsource/classicourw"; */
 
+@import url("https://use.typekit.net/wom3xpa.css");
 
 body {
   font-size: 17px;
   @apply text-base leading-8;
-  font-weight:300;
-  font-family: "Roboto", "Genseki", sans-serif;
+  font-family: "classicourw", "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 @layer utilities {
   @variants responsive {
 .h1-lg{
-  @apply text-6xl tracking-wider font-medium;
-  font-family: "Lora","Genwan";
+  @apply text-6xl tracking-wider ;
+  font-family: "Genwan";
 }
 
 .h2-lg{
-  @apply text-4xl font-medium;
-  font-family: "Lora","Genwan";
+  @apply text-4xl ;
+  font-family: "Genwan";
 }
 
 .h3-lg{
-  @apply text-2xl tracking-wide font-medium leading-7;
-  font-family: "Lora","Genwan";
+  @apply text-2xl tracking-wide  leading-7;
+  font-family: "Genwan";
 }
 
 .captions-lg{
   @apply tracking-wide font-normal;
   font-size: 0.9rem;
-  font-family: "Lora", "Genwan";
+  font-family: "classicourw", "Genseki";
 }
 
 .body-lg{
-  @apply font-normal text-base leading-8;
+  @apply text-base leading-8;
   font-size: 1.2rem;
-  font-weight:300;
-  font-family: "Roboto", "Genseki";
-  opacity: 0.85;
+  font-family: "classicourw", "Genseki";
 
 }
 
 .body2-lg{
   @apply font-normal text-base leading-8;
-  font-size: 0.8rem;
-  font-weight:300;
-  font-family: "Roboto", "Genseki";
-  opacity: 0.85;
+  font-size: 1rem;
+  font-family: "classicourw", "Genseki";
 }
 
 
 .card-lg{
-  @apply font-medium leading-7;
+  @apply  leading-7;
   font-size: 1rem;
-  font-family: "Lora","Genwan";
+  font-family: "Genwan";
 }
 
 
 .h1{
-  @apply text-4xl tracking-wider font-medium;
-  font-family: "Lora","Genwan";
+  @apply text-4xl tracking-wider ;
+  font-family: "Genwan";
 }
 
 .h2{
-  @apply text-2xl font-medium;
-  font-family: "Lora","Genwan";
+  @apply text-2xl ;
+  font-family: "Genwan";
 }
 
 .h3{
-  @apply text-xl tracking-wide font-medium leading-5;
-  font-family: "Lora","Genwan";
+  @apply text-xl tracking-wide  leading-5;
+  font-family: "Genwan";
 }
 
 .captions{
   @apply tracking-wide font-normal leading-5;
   font-size: 0.9rem;
-  font-family: "Lora", "Genwan";
+  font-family: "classicourw", "Genseki";
 }
 
+
 .body{
-  @apply font-normal leading-7;
-  font-weight:300;
-  font-family: "Roboto", "Genseki";
+  @apply leading-7;
+  font-family: "classicourw", "Genseki";
 
 }
 
 .body2{
   @apply font-normal text-base leading-8;
   font-size: 0.8rem;
-  font-weight:300;
-  font-family: "Roboto", "Genseki";
+  font-family: "classicourw", "Genseki";
 }
 
 .card{
-  @apply font-medium leading-7;
+  @apply  leading-7;
   font-size: 0.9rem;
-  font-family: "Lora","Genwan";
+  font-family: "Genwan";
 }
 
 .vertical{
@@ -226,8 +223,8 @@ body {
 
 .glass{
   /* From https://css.glass */
-background: rgba(189,180,176, 0.75);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+background: rgba(255,255,255, 0.25);
+box-shadow: 0 2px 2px rgba(155, 155, 155, 0.1);
 backdrop-filter: blur(2.5px);
 -webkit-backdrop-filter: blur(2.5px);
 }
@@ -236,7 +233,7 @@ backdrop-filter: blur(2.5px);
 .glassDark{
   /* From https://css.glass */
 background:  rgba(62, 79, 84, 0.4);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 backdrop-filter: blur(2.5px);
 -webkit-backdrop-filter: blur(2.5px);
 }
@@ -308,4 +305,23 @@ backdrop-filter: blur(2.5px);
 
 .genseki{
   font-family: "Genseki";
+}
+
+[lang="en"] * {
+  letter-spacing: 0px !important;
+  line-height:1.5 !important;
+}
+
+[lang="en"] h1, [lang="en"] h2, [lang="en"] h3 {
+  letter-spacing: -0.002em !important;
+  line-height:1.3 !important;
+}
+
+
+[lang="en"] .link-btn, [lang="en"] .map-btn {
+  font-size: 1.4rem;
+  font-weight:500;
+  font-family: 'classicourw', sans-serif;
+  padding-top: 0.75rem
+
 }

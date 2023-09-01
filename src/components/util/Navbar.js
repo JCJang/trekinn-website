@@ -25,7 +25,7 @@ const Navbar = () => {
     })
 
   return (<>
-      <div className="lg:hidden z-50 cursor-pointer absolute p-4 text-white" onClick={()=>{setNavOpen(!navOpen)}}>
+      <div className="lg:hidden z-50 cursor-pointer absolute p-4 text-accent" onClick={()=>{setNavOpen(!navOpen)}}>
       {navOpen?
       <CloseOutlinedIcon className="w-16 h-16 text-accent-red"/>
       :
@@ -33,7 +33,7 @@ const Navbar = () => {
       }
       </div>
 
-      <nav ref={navRef} className="glass z-20 shadow h-screen w-64 lg:h-12 pt-3 lg:pt-2 p-2 lg:w-nav-lg  absolute top-0 text-background flex flex-col lg:flex-row justify-between content-center px-4 duration-300" style={{
+      <nav ref={navRef} className="glass z-20 shadow h-screen w-64 lg:h-12 pt-3 lg:pt-2 p-2 lg:w-nav-lg  absolute top-0 text-accent flex flex-col lg:flex-row justify-between content-center px-4 duration-300" style={{
     left:navOpen?"0px":"-16rem"
   }}>
 
@@ -78,12 +78,12 @@ const Navbar = () => {
 
   </div>
 <div className="flex flex-col lg:flex-row">
-  <a href="tel:+886983661588" className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 lg:mr-0 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
-    <PhoneInTalkOutlinedIcon className="pb-1"/>{t("Navbar.callus")}
+  <a href="tel:+886983661588" className="font-medium shadow font-base genwan text-center rounded-full flex items-center px-4 mx-6 lg:mr-0 gap-1 border-grey-dark duration-200 hover:bg-accent-red hover:shadow-none" style={{borderWidth:"1.3px"}}>
+    <PhoneInTalkOutlinedIcon className=""/>{t("Navbar.callus")}
   </a>
   {t("Navbar.language")==="en"?
-  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
-    <LanguageOutlinedIcon className="pb-1"/>{t("Navbar.changeTo")}
+  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 mt-2 my-3 flex items-center gap-1 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
+    <LanguageOutlinedIcon className=""/>{t("Navbar.changeTo")}
   </div>
   :
   <>
