@@ -6,8 +6,8 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 const Footer = () => {
   const {t, i18n} = useTranslation();
   return (
-    <footer className="w-screen p-6 bg-warm flex flex-col items-center justify-center text-center sm:text-left">
-      <div className="flex flex-col w-full sm:flex-row text-background justify-center">
+    <footer className="w-screen px-6 py-24 bg-background-cool flex flex-col items-center justify-center text-center sm:text-left">
+      <div className="flex flex-col w-full sm:flex-row text-grey-darkest justify-center">
         <div className="flex flex-col w-full sm:w-1/2">
             <div className="h3 sm:text-base">
               <div className="leading-9">
@@ -21,7 +21,7 @@ const Footer = () => {
               © 2006 - 2021 Trekinn, All rights reserved.
             </div>
         </div>
-        <div className="w-full flex flex-row sm:flex-col sm:m-0 sm:w-1/5 text-accent-green captions">
+        <div className="w-full flex flex-row sm:flex-col sm:m-0 sm:w-1/5  captions">
             <div className="flex flex-col mt-4 sm:mt-0 mx-auto sm:mx-0 text-left">
               <div>{t("Footer.callPrompt")}</div>
               <a href="tel:+886983661588">0983-661588</a>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="captions mt-6 sm:mt-3 sm:hidden text-background">
+      <div className="captions mt-6 sm:mt-3 sm:hidden">
         © 2006 - 2021 Trekinn, All rights reserved.
       </div>
     </footer>

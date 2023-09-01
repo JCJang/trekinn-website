@@ -21,17 +21,17 @@ body {
   @variants responsive {
 .h1-lg{
   @apply text-6xl tracking-wider ;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .h2-lg{
   @apply text-4xl ;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .h3-lg{
   @apply text-2xl tracking-wide  leading-7;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .captions-lg{
@@ -57,23 +57,23 @@ body {
 .card-lg{
   @apply  leading-7;
   font-size: 1rem;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 
 .h1{
   @apply text-4xl tracking-wider ;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .h2{
   @apply text-2xl ;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .h3{
   @apply text-xl tracking-wide  leading-5;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .captions{
@@ -98,7 +98,7 @@ body {
 .card{
   @apply  leading-7;
   font-size: 0.9rem;
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 .vertical{
@@ -299,7 +299,7 @@ backdrop-filter: blur(3px);
 }
 
 .genwan{
-  font-family: "Genwan";
+  font-family: "linotype-sabon", "Genwan";
 }
 
 
@@ -310,6 +310,11 @@ backdrop-filter: blur(3px);
 [lang="en"] * {
   letter-spacing: 0px !important;
   line-height:1.5 !important;
+}
+
+[lang="en"] .leading-2 {
+  letter-spacing: 0px !important;
+  line-height:1.2 !important;
 }
 
 [lang="en"] h1, [lang="en"] h2, [lang="en"] h3 {

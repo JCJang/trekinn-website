@@ -84,14 +84,14 @@ const Navbar = () => {
     </div>
   </a>
   {t("Navbar.language")==="en"?
-  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-medium shadow font-base genwan text-center rounded-full py-2 px-4 mx-6 mt-2 my-3 flex items-center gap-1 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
+  <div onClick={()=>{ setLanguageDropdownOpen(false); i18n.changeLanguage(t("Navbar.language"))}} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 flex items-center gap-1 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px", cursor:"pointer"}}>
     <div class="flex items-center mx-auto">
     <LanguageOutlinedIcon className=""/>{t("Navbar.changeTo")}
     </div>
   </div>
   :
   <>
-      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-medium shadow font-base genwan text-center rounded-full py-2 px-4 mx-6 mt-2 my-3 lg:my-0 lg:ml-2 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <button type="button" onClick={()=>setLanguageDropdownOpen(!languageDropdownOpen)} className="font-medium shadow font-base genwan text-center rounded-full px-4 mx-6 lg:my-0 lg:ml-2 pt-0.5 border-grey-dark duration-200 hover:bg-accent-blue hover:shadow-none" style={{borderWidth:"1.3px"}} id="menu-button" aria-expanded="true" aria-haspopup="true">
         <LanguageOutlinedIcon className="pb-1"/>
         中文版
         <ExpandMoreOutlinedIcon className="pb-1"/>

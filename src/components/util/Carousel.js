@@ -17,7 +17,7 @@ const Carousel = ({verticalTitle=true, title="", body="", linkText="", linkRoute
     }
     <div className="flex flex-col w-full">
       {verticalTitle === false &&
-        <div className="h2 mb-2 sm:mb-6 lg:h2-lg fit-content tracking-tighter opacity-75" >{title}</div>
+        <div className="h2 mb-2 sm:mb-4 lg:h2-lg fit-content tracking-tighter" >{title}</div>
       }
       <div className="max-w-full w-full flex h-full flex-col bg-background-beige">
       <img src={imgSources[selectedImage]} alt={alt} className="z-10 place-center flex-grow max-h-full h-64 object-contain shadow" style={{borderRadius:"3px"}}/>

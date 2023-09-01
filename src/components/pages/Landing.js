@@ -45,7 +45,7 @@ const Landing = () => {
           </picture>
           <div className="absolute top-0 w-screen h-screen flex flex-col justify-center items-center">
             {t("Navbar.language")!=="en"?
-            <h1 className="text-background h1 lg:h1-lg text-center m-8">
+            <h1 className="text-background h1 lg:h1-lg text-center m-2">
               {t("Landing.h1")}
             </h1>
             :
@@ -53,7 +53,7 @@ const Landing = () => {
               {t("Landing.h1")}
             </h1>
             }
-            <div className={t("Navbar.language")!=="en"?"body lg:body-lg text-background max-w-sm text-center tracking-normal mx-12 font-medium":"body lg:body-lg text-background max-w-sm text-center tracking-wider mx-12 font-medium"}>
+            <div className={t("Navbar.language")!=="en"?"body lg:body-lg text-background max-w-sm text-center tracking-normal mx-12 font-medium leading-2":"body lg:body-lg text-background max-w-sm text-center tracking-wider mx-12 font-medium"}>
     {t("Landing.p1")}
             </div>
             <MountainLogo className="h-8 w-full m-6"/>

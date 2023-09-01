@@ -207,10 +207,10 @@ const Rooms = ({
           <h2 className="h2 lg:h2-lg text-accent mt-2 mb-5 sm:my-5">
             {t("Rooms.reservation+payment.h2")}
           </h2>
-          <div className="body sm:body text-grey-darkest">
+          <div className="body sm:body text-grey-darkest lg:pr-6">
           {t("Rooms.reservation+payment.p1")}
           </div>
-          <div className="card lg:card-lg flex flex-row mt-3">
+          <div className="card lg:card-lg flex flex-row mt-3 lg:pr-8">
             <div className="text-right mr-6 text-warm-dark">
               <div>{t("Rooms.reservation+payment.reservation.number")}</div>
               <div>{t("Rooms.reservation+payment.reservation.dayNumber")}</div>
@@ -270,7 +270,7 @@ const Rooms = ({
           <h3 className="h3 lg:h3-lg text-warm my-5 pt-2">
             {t("Rooms.agreement.cancellation.h3")}
           </h3>
-          <div className="body sm:body text-grey-darkest">
+          <div className="body sm:body text-grey-darkest lg:pr-8">
           {t("Rooms.agreement.cancellation.p1")}
           </div>
         </div>
@@ -297,7 +297,7 @@ const Rooms = ({
       </div>
 
       <div id="other" className="caption bg-background text-grey-dark flex flex-col-reverse lg:flex-row">
-      <div id="overview" className="w-full sm:pl-16 lg:w-1/2 p-6 bg-background-beige">
+      <div id="overview" className="w-full sm:px-16 md:pr-10 lg:pr-4 lg:w-1/2  bg-background-beige pt-2 lg:pt-4">
           <IntraWebLink title={t("Rooms.packages.title")} verticalTitle={JSON.parse(t("mod.vertical"))} body={t("Rooms.packages.body")} linkText={t("Rooms.packages.linkText")} linkRoute="/destinations+map"/>
       </div>
         <div id="overview" className="w-full sm:px-20 lg:px-16 lg:w-1/2 sm:mx-2 sm:pb-10 lg:m-0 p-6">

@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next'
 const LandingLink = ({verticalTitle=true, title="", body="", linkText="", linkRoute=""}) => {
   const {t, i18n} = useTranslation();
 
-  return (<div className={t("Navbar.language")!=="en"?"bg-background-beige text-accent flex p-6 px-8 lg:max-w-33":"bg-background-beige text-accent flex p-6"}>
+  return (<div className={t("Navbar.language")!=="en"?"bg-background-beige text-accent flex pb-6 pt-2 px-8 lg:max-w-33":"bg-background-beige text-accent flex p-6"}>
     {verticalTitle &&
-      <div className="h2 lg:h2-lg vertical fit-content tracking-tighter opacity-75 opacity-75" style={{
+      <div className="h2 lg:h2-lg vertical fit-content tracking-tighter opacity-75" style={{
         margin: "0.35rem 1.7rem 0 1rem"
       }}>{title}</div>
     }
@@ -15,7 +15,7 @@ const LandingLink = ({verticalTitle=true, title="", body="", linkText="", linkRo
     }}>
       {verticalTitle === false &&
         <div className="h2 lg:h2-lg fit-content tracking-normal opacity-75" style={{
-          margin: "1rem 0"
+          margin: "0 0 0.5rem 0"
         }}>{title}</div>
       }
       <div className="flex-grow">{body}</div>
