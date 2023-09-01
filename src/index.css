@@ -328,6 +328,11 @@ backdrop-filter: blur(3px);
   line-height:1.1 !important;
 }
 
+[lang="en"] .h3.opacity-50 {
+  font-style:italic;
+  opacity:0.7;
+}
+
 @media screen and (max-width:640px){
   [lang="en"] .h2 {
     @apply text-3xl ;

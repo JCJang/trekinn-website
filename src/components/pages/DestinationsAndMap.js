@@ -15,6 +15,7 @@ import lakePeaceful from '../../photos/destinations/lake-peaceful.jpg'
 import tarokoTrial from '../../photos/destinations/taroko-trail.jpg'
 import lakeCanoing from '../../photos/destinations/lake-canoing.jpg'
 import hualienCoast from '../../photos/destinations/hualien-coast.jpg'
+import map from '../../photos/map.png'
 
 // <h1 className="mt-20 mx-16 h3 lg:h3-lg text-grey-darkest text-left w-full sm:w-3/4 opacity-50">客房介紹</h1>
 
@@ -52,13 +53,14 @@ const DestinationsAndMap = () => {
           }>
               {t("DestinationsAndMap.destinations+traffic.h2")}
             </h2>
-            <div className="card lg:card-lg flex flex-row mt-3 shadow-sm" style={{
+            <div className="card lg:card-lg flex flex-row mt-3 shadow-sm overflow-hidden" style={{
                 borderRadius: "2px",
                 height: "22rem"
               }}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12260.32208819209!2d121.62286412301299!3d23.995227456828072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689e2baebff605%3A0x92d1b4b981f0171c!2zOTcw6Iqx6JOu57ij6Iqx6JOu5biC5Lit6IiI6LevMTc56Jmf!5e0!3m2!1szh-TW!2stw!4v1462847137894" width="100%" height="100%" frameborder="0" style={{
-                  border: "0"
-                }} allowfullscreen=""></iframe>
+      
+             <PhotoHolder src={map}/>
+ 
+             
             </div>
             <div className="self-end text-right captions mt-2 text-grey-dark">
               <a href="https://goo.gl/maps/eNXLrehNP472" target="_blank">{t("DestinationsAndMap.destinations+traffic.mapcaptions")}</a>
