@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~@fontsource/roboto";
-@import "~@fontsource/rufina";
+@import url("https://use.typekit.net/wom3xpa.css");
+@import "~@fontsource/lora";
 
 
 body {
   font-size: 17px;
   @apply text-base leading-8;
-  font-family: "Roboto", "Genseki", sans-serif;
+  font-weight:300;
+  font-family: "canada-type-gibson", "Genseki", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,29 +19,30 @@ body {
   @variants responsive {
 .h1-lg{
   @apply text-6xl tracking-wider font-medium;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .h2-lg{
   @apply text-4xl font-medium;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .h3-lg{
   @apply text-2xl tracking-wide font-medium leading-7;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .captions-lg{
   @apply tracking-wide font-normal;
   font-size: 0.9rem;
-  font-family: "Rufina", "Genwan";
+  font-family: "Lora", "Genwan";
 }
 
 .body-lg{
   @apply font-normal text-base leading-8;
   font-size: 1.2rem;
-  font-family: "Roboto", "Genseki";
+  font-weight:300;
+  font-family: "canada-type-gibson", "Genseki";
   opacity: 0.85;
 
 }
@@ -48,7 +50,8 @@ body {
 .body2-lg{
   @apply font-normal text-base leading-8;
   font-size: 0.8rem;
-  font-family: "Roboto", "Genseki";
+  font-weight:300;
+  font-family: "canada-type-gibson", "Genseki";
   opacity: 0.85;
 }
 
@@ -56,47 +59,49 @@ body {
 .card-lg{
   @apply font-medium leading-7;
   font-size: 1rem;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 
 .h1{
   @apply text-4xl tracking-wider font-medium;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .h2{
   @apply text-2xl font-medium;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .h3{
   @apply text-xl tracking-wide font-medium leading-5;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .captions{
   @apply tracking-wide font-normal leading-5;
   font-size: 0.9rem;
-  font-family: "Rufina", "Genwan";
+  font-family: "Lora", "Genwan";
 }
 
 .body{
   @apply font-normal leading-7;
-  font-family: "Roboto", "Genseki";
+  font-weight:300;
+  font-family: "canada-type-gibson", "Genseki";
 
 }
 
 .body2{
   @apply font-normal text-base leading-8;
   font-size: 0.8rem;
-  font-family: "Roboto", "Genseki";
+  font-weight:300;
+  font-family: "canada-type-gibson", "Genseki";
 }
 
 .card{
   @apply font-medium leading-7;
   font-size: 0.9rem;
-  font-family: "Rufina","Genwan";
+  font-family: "Lora","Genwan";
 }
 
 .vertical{
